@@ -1,0 +1,22 @@
+{
+  "name": "erciyes-english-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Erciyes English Website",
+  "author": "Clay Harmon",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^3.6.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
