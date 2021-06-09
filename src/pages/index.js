@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import fetch from "node-fetch";
 // styles
 const pageStyles = {
   color: "#232129",
