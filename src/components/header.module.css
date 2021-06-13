@@ -1,0 +1,67 @@
+.main-header {
+  padding: 20px;
+  background: #c0272d;
+}
+
+.main-header a {
+  color: white;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.main-header a:hover {
+  opacity: 1;
+}
+
+.logo-mark {
+  width: 100px;
+}
+
+.logo-type {
+  width: 130px;
+  margin-left: 10px;
+}
+
+.logo-mark,
+.logo-type {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.5s;
+  fill: white;
+}
+
+.main-header nav > ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+
+.main-header nav > ul > li {
+  display: inline-block;
+}
+
+.main-header nav > ul > li > a {
+  display: block;
+  text-transform: uppercase;
+  padding: 14px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.main-header .highlighted {
+  background: white;
+  opacity: 1;
+  color: black;
+}
+
+.main-header a.highlighted:hover {
+  background: black;
+  color: white;
+}
+
+.header-lower {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+}

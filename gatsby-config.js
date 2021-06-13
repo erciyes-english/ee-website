@@ -22,5 +22,26 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mdx`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["100", "300", "400", "500", "900"],
+            },
+          ],
+        },
+      },
+    },
   ],
 };

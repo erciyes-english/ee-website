@@ -1,1 +1,1 @@
-/*eslint-disable*/module.exports={messages:{}};
+/*eslint-disable*/module.exports={messages:{"menu.about":"About","menu.contact":"Contact","menu.english-world":"English World","menu.home":"Home","menu.language-switcher":"Türkçeye Geçmek","menu.programs":"Programs","menu.register":"Register"}};

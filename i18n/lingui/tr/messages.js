@@ -1,1 +1,1 @@
-/*eslint-disable*/module.exports={messages:{}};
+/*eslint-disable*/module.exports={messages:{"menu.about":"Bilgi","menu.contact":"İletişim","menu.english-world":"English World","menu.home":"Anasayfa","menu.language-switcher":"Change to English","menu.programs":"Programlar","menu.register":"Kaydol"}};
