@@ -5,8 +5,9 @@ import Seo from "../components/seo";
 const IndexPage = () => {
   return (
     <main>
-      <title>Erciyes English</title>
-      <Seo />
+      <Seo>
+        <title>Erciyes English</title>
+      </Seo>
       <Header />
       <div style={{ background: "blue", height: "1000px" }}></div>
     </main>
