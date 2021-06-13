@@ -1,8 +1,9 @@
 module.exports = {
   pathPrefix: "/ee-website",
   siteMetadata: {
-    title: "Erciyes English Website",
+    title: "Erciyes English",
     siteUrl: "https://erciyes-english.github.io/ee-website/",
+    author: "Erciyes English",
   },
   plugins: [
     {

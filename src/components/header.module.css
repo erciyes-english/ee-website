@@ -1,8 +1,15 @@
 .main-header {
   padding: 20px;
-  background: #c0272d;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
 }
 
+.main-header.small {
+  background: #c0272d;
+  padding: 10px 20px;
+}
 .main-header a {
   color: white;
   opacity: 0.8;
@@ -64,4 +71,8 @@
   display: grid;
   grid-template-columns: 40% 60%;
   align-items: center;
+}
+
+.logo > a {
+  opacity: 1;
 }
