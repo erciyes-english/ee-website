@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/ee-website",
   siteMetadata: {
     title: "Erciyes English",
     siteUrl: "https://erciyes-english.github.io/ee-website/",
