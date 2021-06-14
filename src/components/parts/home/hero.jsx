@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
 import { Trans } from "@lingui/macro";
 import { LocalizedLink as Link } from "gatsby-theme-i18n";
+import LeadForm from "../../forms/lead-form";
 
 const Hero = () => (
   <div style={{ display: "grid" }}>
@@ -39,7 +40,9 @@ const Hero = () => (
             </Link>
           </div>
         </div>
-        <div className={heroStyles.heroContentRight}></div>
+        <div className={heroStyles.heroContentRight}>
+          <LeadForm />
+        </div>
       </div>
     </div>
   </div>

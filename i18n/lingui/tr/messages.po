@@ -13,21 +13,25 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/parts/home/hero.jsx:35
+#: src/components/parts/home/hero.jsx:36
 msgid "hero.btn1"
 msgstr "Programlar"
 
-#: src/components/parts/home/hero.jsx:38
+#: src/components/parts/home/hero.jsx:39
 msgid "hero.btn2"
 msgstr "Kaydol"
 
-#: src/components/parts/home/hero.jsx:24
+#: src/components/parts/home/hero.jsx:25
 msgid "hero.line1"
 msgstr "Konuşmayı <0>paylaşan,</0>"
 
-#: src/components/parts/home/hero.jsx:29
+#: src/components/parts/home/hero.jsx:30
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
+
+#: src/components/forms/lead-form.jsx:26
+msgid "leadForm.fname"
+msgstr "Adın"
 
 #: src/components/header.jsx:48
 msgid "menu.about"

@@ -13,21 +13,25 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/parts/home/hero.jsx:35
+#: src/components/parts/home/hero.jsx:36
 msgid "hero.btn1"
 msgstr "Programs"
 
-#: src/components/parts/home/hero.jsx:38
+#: src/components/parts/home/hero.jsx:39
 msgid "hero.btn2"
 msgstr "Register"
 
-#: src/components/parts/home/hero.jsx:24
+#: src/components/parts/home/hero.jsx:25
 msgid "hero.line1"
 msgstr "sharing <0>life.</0>"
 
-#: src/components/parts/home/hero.jsx:29
+#: src/components/parts/home/hero.jsx:30
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
+
+#: src/components/forms/lead-form.jsx:26
+msgid "leadForm.fname"
+msgstr "First Name"
 
 #: src/components/header.jsx:48
 msgid "menu.about"
