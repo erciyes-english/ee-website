@@ -3,17 +3,23 @@
   background: transparent;
   position: fixed;
   width: 100%;
-  transition: all 0.3s;
+  transition: all 0.5s;
+  z-index: 1000;
 }
 
 .main-header.small {
-  background: #c0272d;
+  background: #ffffff;
   padding: 10px 20px;
+  box-shadow: rgb(0 0 0 / 23%) 0px 0px 7px 0px;
 }
 .main-header a {
   color: white;
   opacity: 0.8;
   transition: all 0.3s;
+}
+
+.main-header.small a {
+  color: black;
 }
 
 .main-header a:hover {
@@ -35,6 +41,18 @@
   vertical-align: middle;
   transition: all 0.5s;
   fill: white;
+}
+.main-header.small .logo-mark,
+.main-header.main-header.small .logo-type {
+  fill: #c0272d;
+}
+
+.main-header.small .logo-mark {
+  width: 70px;
+}
+
+.main-header.small .logo-type {
+  width: 100px;
 }
 
 .main-header nav > ul {
@@ -60,6 +78,10 @@
   background: white;
   opacity: 1;
   color: black;
+}
+.main-header.small .highlighted {
+  background: #c0272d;
+  color: white;
 }
 
 .main-header a.highlighted:hover {

@@ -1,0 +1,31 @@
+.hero-image-wrapper {
+  grid-area: 1/1;
+  max-height: 90vh;
+}
+
+.hero-content-wrapper {
+  grid-area: 1/1;
+  position: relative;
+  place-items: center;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+}
+
+.hero-content-right {
+  height: 500px;
+  background-color: #c0272d;
+}
+
+.hero-content-left h2 {
+  color: white;
+  font-size: 52px;
+  font-weight: 100;
+}

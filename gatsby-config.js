@@ -37,11 +37,14 @@ module.exports = {
           google: [
             {
               family: "Roboto",
-              variants: ["100", "300", "400", "500", "900"],
+              variants: ["100", "300", "400", "500", "700", "900"],
             },
           ],
         },
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
