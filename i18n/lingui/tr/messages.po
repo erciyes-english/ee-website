@@ -13,30 +13,38 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/header.jsx:29
+#: src/components/parts/home/hero.jsx:22
+msgid "hero.line1"
+msgstr "Konuşmayı <0>paylaşan,</0>"
+
+#: src/components/parts/home/hero.jsx:27
+msgid "hero.line2"
+msgstr "hayatı <0>paylaşır.</0>"
+
+#: src/components/header.jsx:48
 msgid "menu.about"
 msgstr "Bilgi"
 
-#: src/components/header.jsx:44
+#: src/components/header.jsx:63
 msgid "menu.contact"
 msgstr "İletişim"
 
-#: src/components/header.jsx:39
+#: src/components/header.jsx:58
 msgid "menu.english-world"
 msgstr "English World"
 
-#: src/components/header.jsx:24
+#: src/components/header.jsx:43
 msgid "menu.home"
 msgstr "Anasayfa"
 
-#: src/components/language-switcher.jsx:15
+#: src/components/language-switcher.jsx:16
 msgid "menu.language-switcher"
 msgstr "Change to English"
 
-#: src/components/header.jsx:34
+#: src/components/header.jsx:53
 msgid "menu.programs"
 msgstr "Programlar"
 
-#: src/components/header.jsx:48
+#: src/components/header.jsx:68
 msgid "menu.register"
 msgstr "Kaydol"

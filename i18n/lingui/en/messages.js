@@ -1,1 +1,1 @@
-/*eslint-disable*/module.exports={messages:{"menu.about":"About","menu.contact":"Contact","menu.english-world":"English World","menu.home":"Home","menu.language-switcher":"Türkçeye Geçmek","menu.programs":"Programs","menu.register":"Register"}};
+/*eslint-disable*/module.exports={messages:{"hero.line1":"sharing <0>life.</0>","hero.line2":"sharing <0>conversation.</0>","menu.about":"About","menu.contact":"Contact","menu.english-world":"English World","menu.home":"Home","menu.language-switcher":"Türkçeye Geçmek","menu.programs":"Programs","menu.register":"Register"}};

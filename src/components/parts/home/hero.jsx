@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
-
+import { Trans } from "@lingui/macro";
 const Hero = () => (
   <div style={{ display: "grid" }}>
     <StaticImage
@@ -19,10 +19,14 @@ const Hero = () => (
       <div className={heroStyles.heroContent}>
         <div className={heroStyles.heroContentLeft}>
           <h2>
-            sharing <strong>life.</strong>
+            <Trans id="hero.line1">
+              sharing <strong>life.</strong>
+            </Trans>
           </h2>
           <h2>
-            sharing <strong>conversations.</strong>
+            <Trans id="hero.line2">
+              sharing <strong>conversations.</strong>
+            </Trans>
           </h2>
         </div>
         <div className={heroStyles.heroContentRight}></div>

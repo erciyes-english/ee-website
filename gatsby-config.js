@@ -38,6 +38,7 @@ module.exports = {
             {
               family: "Roboto",
               variants: ["100", "300", "400", "500", "700", "900"],
+              subsets: ["latin", "latin-ext"],
             },
           ],
         },
