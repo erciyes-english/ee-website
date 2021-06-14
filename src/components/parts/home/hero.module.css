@@ -29,3 +29,26 @@
   font-size: 52px;
   font-weight: 100;
 }
+
+.hero-buttons a {
+  display: inline-block;
+  border: white 2px solid;
+  padding: 12px 24px;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: white;
+  transition: 0.3s all;
+}
+
+.highlighted {
+  margin-left: 20px;
+  background-color: #c0272d;
+}
+
+.hero-buttons a:hover {
+  background-color: white;
+  color: black;
+}

@@ -13,11 +13,19 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/parts/home/hero.jsx:22
+#: src/components/parts/home/hero.jsx:35
+msgid "hero.btn1"
+msgstr "Programs"
+
+#: src/components/parts/home/hero.jsx:38
+msgid "hero.btn2"
+msgstr "Register"
+
+#: src/components/parts/home/hero.jsx:24
 msgid "hero.line1"
 msgstr "sharing <0>life.</0>"
 
-#: src/components/parts/home/hero.jsx:27
+#: src/components/parts/home/hero.jsx:29
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
 

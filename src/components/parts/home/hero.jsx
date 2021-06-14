@@ -2,6 +2,8 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
 import { Trans } from "@lingui/macro";
+import { LocalizedLink as Link } from "gatsby-theme-i18n";
+
 const Hero = () => (
   <div style={{ display: "grid" }}>
     <StaticImage
@@ -28,6 +30,14 @@ const Hero = () => (
               sharing <strong>conversations.</strong>
             </Trans>
           </h2>
+          <div className={heroStyles.heroButtons}>
+            <Link to="/#programs">
+              <Trans id="hero.btn1">Programs</Trans>
+            </Link>
+            <Link to="/register" className={heroStyles.highlighted}>
+              <Trans id="hero.btn2">Register</Trans>
+            </Link>
+          </div>
         </div>
         <div className={heroStyles.heroContentRight}></div>
       </div>
