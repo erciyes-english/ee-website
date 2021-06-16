@@ -13,15 +13,17 @@
 
 .hero-content {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 60% 40%;
   width: 100%;
   max-width: 1100px;
   align-items: center;
+  padding-top: 50px;
 }
 
 .hero-content-right {
-  padding: 20px 30px;
+  padding: 20px 40px;
   background-color: #c0272d;
+  box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 25%);
 }
 
 .hero-content-left h2 {
