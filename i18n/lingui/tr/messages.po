@@ -21,6 +21,10 @@ msgstr "Programlar"
 msgid "hero.btn2"
 msgstr "Kaydol"
 
+#: src/components/parts/home/hero.jsx:45
+msgid "hero.form-title"
+msgstr "İngilizce Serüvenine <0>Bugün Başla!</0>"
+
 #: src/components/parts/home/hero.jsx:25
 msgid "hero.line1"
 msgstr "Konuşmayı <0>paylaşan,</0>"
@@ -29,9 +33,61 @@ msgstr "Konuşmayı <0>paylaşan,</0>"
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
-#: src/components/forms/lead-form.jsx:26
+#: src/components/forms/lead-form.jsx:39
+msgid "leadForm.email"
+msgstr "E-mail"
+
+#: src/components/forms/lead-form.jsx:29
 msgid "leadForm.fname"
 msgstr "Adın"
+
+#: src/components/forms/lead-form.jsx:78
+msgid "leadForm.gdpr"
+msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
+
+#: src/components/forms/lead-form.jsx:48
+msgid "leadForm.interest"
+msgstr "Neye ilgin var?"
+
+#: src/components/forms/lead-form.jsx:51
+msgid "leadForm.interest.option1"
+msgstr "Aşama 1"
+
+#: src/components/forms/lead-form.jsx:54
+msgid "leadForm.interest.option2"
+msgstr "Aşama 2"
+
+#: src/components/forms/lead-form.jsx:57
+msgid "leadForm.interest.option3"
+msgstr "Aşama 3"
+
+#: src/components/forms/lead-form.jsx:60
+msgid "leadForm.interest.option4"
+msgstr "Bağlantı Programı"
+
+#: src/components/forms/lead-form.jsx:63
+msgid "leadForm.interest.option5"
+msgstr "Sohbet Kulubü"
+
+#: src/components/forms/lead-form.jsx:69
+msgid "leadForm.interest.option6"
+msgstr "Bire Bir Dersler"
+
+#: src/components/forms/lead-form.jsx:72
+msgid "leadForm.interest.option7"
+msgstr "Diğerleri"
+
+#: src/components/forms/lead-form.jsx:33
+msgid "leadForm.lname"
+msgstr "Soyadın"
+
+#: src/components/forms/lead-form.jsx:44
+msgid "leadForm.phone"
+msgstr "Telefon"
+
+#: src/components/forms/lead-form.jsx:85
+msgid "leadForm.submit-btn"
+msgstr "Gönder"
 
 #: src/components/header.jsx:48
 msgid "menu.about"

@@ -42,7 +42,9 @@ const Hero = () => (
         </div>
         <div className={heroStyles.heroContentRight}>
           <h2 className={heroStyles.formTitle}>
-            begin your english <strong>journey today!</strong>
+            <Trans id="hero.form-title">
+              begin your english <strong>journey today!</strong>
+            </Trans>
           </h2>
           <LeadForm />
         </div>
