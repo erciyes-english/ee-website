@@ -1,0 +1,72 @@
+.lead-form input,
+.lead-form select {
+  border: 1px solid white;
+  background-color: white;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #495057;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  transition: border 0.3s;
+}
+
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.input-two-col {
+  display: grid;
+  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  column-gap: 10px;
+}
+
+.lead-form select {
+  height: 38px;
+}
+
+.form-checkbox {
+  display: table-row;
+  cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"] {
+  display: table-cell;
+  vertical-align: top;
+  width: auto;
+  margin: 0;
+}
+
+.form-checkbox span {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 5px;
+  color: white;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.lead-form button {
+  display: block;
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  min-width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 6px 12px;
+  line-height: 1.5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.lead-form button:hover {
+  background: black;
+  color: white;
+}

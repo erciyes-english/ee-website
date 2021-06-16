@@ -28,6 +28,7 @@
   color: white;
   font-size: 52px;
   font-weight: 100;
+  line-height: 1;
 }
 
 .hero-buttons a {
@@ -51,4 +52,13 @@
 .hero-buttons a:hover {
   background-color: white;
   color: black;
+}
+
+.form-title {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 1.1;
+  margin-bottom: 30px;
 }
