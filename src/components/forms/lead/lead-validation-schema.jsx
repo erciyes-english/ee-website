@@ -1,16 +1,9 @@
 import * as Yup from "yup";
 import "yup-phone-lite";
-import { t } from "@lingui/macro";
 
-const LeadValidationSchema = Yup.object().shape({
+export const LeadValidationSchemaEn = Yup.object().shape({
   fname: Yup.string()
-    .min(
-      2,
-      t({
-        id: "form.schema.name.min",
-        message: "Name must be longer than 2 characters.",
-      })
-    )
+    .min(2, "Name must be longer than 2 characters.")
     .max(50, "Names must be shorter than 50 characters.")
     .required("This field is required."),
   lname: Yup.string()
@@ -27,4 +20,21 @@ const LeadValidationSchema = Yup.object().shape({
   gdpr: Yup.boolean().oneOf([true], "Must Accept GDPR"),
 });
 
-export default LeadValidationSchema;
+export const LeadValidationSchemaTr = Yup.object().shape({
+  fname: Yup.string()
+    .min(2, "Ad 2 harften uzun olmalıdır.")
+    .max(50, "Ad 50 harften kısa olmalıdır.")
+    .required("Bu alan gereklidir."),
+  lname: Yup.string()
+    .min(2, "Ad 2 harften uzun olmalıdır.")
+    .max(50, "Ad 50 harften kısa olmalıdır.")
+    .required("Bu alan gereklidir."),
+  email: Yup.string()
+    .email("Geçersiz e-posta adresi.")
+    .required("Bu alan gereklidir."),
+  phone: Yup.string()
+    .phone("TR", "Geçersiz telefon numarası.")
+    .required("Bu alan gereklidir."),
+  interest: Yup.string().required("Bu alan gereklidir."),
+  gdpr: Yup.boolean().oneOf([true], "GDPR'yi Kabul Etmeli"),
+});

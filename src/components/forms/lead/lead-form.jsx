@@ -4,11 +4,19 @@ import { t } from "@lingui/macro";
 import * as leadFormStyles from "./lead-form.module.css";
 import { FaCheckCircle } from "react-icons/fa";
 import FieldWrapper from "../field-wrapper";
-import LeadValidationSchema from "./lead-validation-schema";
+import {
+  LeadValidationSchemaEn,
+  LeadValidationSchemaTr,
+} from "./lead-validation-schema";
 import LeadFormSubmission from "./lead-form-submission";
+import { useLocalization } from "gatsby-theme-i18n";
 
 const LeadForm = ({ errorTextColor }) => {
+  const { locale } = useLocalization();
+  const localValidation =
+    locale === "en" ? LeadValidationSchemaEn : LeadValidationSchemaTr;
   const [isSent, setIsSent] = React.useState(false);
+
   return (
     <Formik
       initialValues={{
@@ -19,7 +27,7 @@ const LeadForm = ({ errorTextColor }) => {
         interest: "",
         gdpr: false,
       }}
-      validationSchema={LeadValidationSchema}
+      validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
         // axios -> POST request to cloudflare worker.
         setTimeout(() => {

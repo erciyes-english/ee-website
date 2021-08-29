@@ -31,7 +31,6 @@ exports.onCreateNode = ({
     return Promise.all(
       node.frontmatter.remoteImageUrl.map((url) => {
         try {
-          console.log(node.frontmatter.remoteImageUrl);
           return createRemoteFileNode({
             url,
             parentNodeId: node.id,
