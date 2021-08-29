@@ -25,10 +25,6 @@ msgstr "Daha Fazla <0>Soruların mı Var?</0>"
 msgid "footer.headline"
 msgstr "Bağlantıda <0>Ol</0>"
 
-#: src/components/forms/lead/lead-validation-schema.jsx:9
-msgid "form.schema.name.min"
-msgstr "Ad 2 harften uzun olmalıdır."
-
 #: src/components/parts/home/hero.jsx:36
 msgid "hero.btn1"
 msgstr "Programlar"
@@ -49,55 +45,55 @@ msgstr "Konuşmayı <0>paylaşan,</0>"
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
-#: src/components/forms/lead/lead-form.jsx:60
+#: src/components/forms/lead/lead-form.jsx:68
 msgid "leadForm.email"
 msgstr "E-mail"
 
-#: src/components/forms/lead/lead-form.jsx:45
+#: src/components/forms/lead/lead-form.jsx:53
 msgid "leadForm.fname"
 msgstr "Adın"
 
-#: src/components/forms/lead/lead-form.jsx:112
+#: src/components/forms/lead/lead-form.jsx:120
 msgid "leadForm.gdpr"
 msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
 
-#: src/components/forms/lead/lead-form.jsx:79
+#: src/components/forms/lead/lead-form.jsx:87
 msgid "leadForm.interest"
 msgstr "Neye ilgin var?"
 
-#: src/components/forms/lead/lead-form.jsx:82
+#: src/components/forms/lead/lead-form.jsx:90
 msgid "leadForm.interest.option1"
 msgstr "Aşama 1"
 
-#: src/components/forms/lead/lead-form.jsx:85
+#: src/components/forms/lead/lead-form.jsx:93
 msgid "leadForm.interest.option2"
 msgstr "Aşama 2"
 
-#: src/components/forms/lead/lead-form.jsx:88
+#: src/components/forms/lead/lead-form.jsx:96
 msgid "leadForm.interest.option3"
 msgstr "Aşama 3"
 
-#: src/components/forms/lead/lead-form.jsx:91
+#: src/components/forms/lead/lead-form.jsx:99
 msgid "leadForm.interest.option4"
 msgstr "Bağlantı Programı"
 
-#: src/components/forms/lead/lead-form.jsx:97
+#: src/components/forms/lead/lead-form.jsx:105
 msgid "leadForm.interest.option5"
 msgstr "Sohbet Kulubü"
 
-#: src/components/forms/lead/lead-form.jsx:103
+#: src/components/forms/lead/lead-form.jsx:111
 msgid "leadForm.interest.option6"
 msgstr "Bire Bir Dersler"
 
-#: src/components/forms/lead/lead-form.jsx:106
+#: src/components/forms/lead/lead-form.jsx:114
 msgid "leadForm.interest.option7"
 msgstr "Diğerleri"
 
-#: src/components/forms/lead/lead-form.jsx:52
+#: src/components/forms/lead/lead-form.jsx:60
 msgid "leadForm.lname"
 msgstr "Soyadın"
 
-#: src/components/forms/lead/lead-form.jsx:67
+#: src/components/forms/lead/lead-form.jsx:75
 msgid "leadForm.phone"
 msgstr "Telefon"
 
