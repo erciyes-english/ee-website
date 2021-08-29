@@ -1,6 +1,5 @@
 .hero-image-wrapper {
   grid-area: 1/1;
-  max-height: 90vh;
 }
 
 .hero-content-wrapper {
@@ -17,13 +16,19 @@
   width: 100%;
   max-width: 1100px;
   align-items: center;
-  padding-top: 50px;
+  padding: 120px 10px;
 }
 
 .hero-content-right {
   padding: 20px 40px;
   background-color: #c0272d;
   box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 25%);
+  color: white;
+  margin: 10px;
+}
+
+.hero-content-left {
+  margin: 10px;
 }
 
 .hero-content-left h2 {
@@ -63,4 +68,21 @@
   font-weight: 100;
   line-height: 1.1;
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .hero-image-wrapper {
+    max-height: auto;
+  }
+  .hero-content {
+    grid-template-columns: 100%;
+  }
+
+  .hero-content-left {
+    text-align: center;
+    padding: 150px 0;
+  }
+
+  .hero-content-right {
+    margin: 0px;
+  }
 }

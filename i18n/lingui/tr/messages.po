@@ -13,6 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/footer.jsx:61
+msgid "footer.form-desc"
+msgstr "Bu formu doldur! Ofisimizden birisi seninle iletişime geçecektir!"
+
+#: src/components/footer.jsx:56
+msgid "footer.form-title"
+msgstr "Daha Fazla <0>Soruların mı Var?</0>"
+
+#: src/components/footer.jsx:19
+msgid "footer.headline"
+msgstr "Bağlantıda <0>Ol</0>"
+
+#: src/components/forms/lead/lead-validation-schema.jsx:9
+msgid "form.schema.name.min"
+msgstr "Ad 2 harften uzun olmalıdır."
+
 #: src/components/parts/home/hero.jsx:36
 msgid "hero.btn1"
 msgstr "Programlar"
@@ -33,75 +49,78 @@ msgstr "Konuşmayı <0>paylaşan,</0>"
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
-#: src/components/forms/lead-form.jsx:39
+#: src/components/forms/lead/lead-form.jsx:60
 msgid "leadForm.email"
 msgstr "E-mail"
 
-#: src/components/forms/lead-form.jsx:29
+#: src/components/forms/lead/lead-form.jsx:45
 msgid "leadForm.fname"
 msgstr "Adın"
 
-#: src/components/forms/lead-form.jsx:78
+#: src/components/forms/lead/lead-form.jsx:112
 msgid "leadForm.gdpr"
 msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
 
-#: src/components/forms/lead-form.jsx:48
+#: src/components/forms/lead/lead-form.jsx:79
 msgid "leadForm.interest"
 msgstr "Neye ilgin var?"
 
-#: src/components/forms/lead-form.jsx:51
+#: src/components/forms/lead/lead-form.jsx:82
 msgid "leadForm.interest.option1"
 msgstr "Aşama 1"
 
-#: src/components/forms/lead-form.jsx:54
+#: src/components/forms/lead/lead-form.jsx:85
 msgid "leadForm.interest.option2"
 msgstr "Aşama 2"
 
-#: src/components/forms/lead-form.jsx:57
+#: src/components/forms/lead/lead-form.jsx:88
 msgid "leadForm.interest.option3"
 msgstr "Aşama 3"
 
-#: src/components/forms/lead-form.jsx:60
+#: src/components/forms/lead/lead-form.jsx:91
 msgid "leadForm.interest.option4"
 msgstr "Bağlantı Programı"
 
-#: src/components/forms/lead-form.jsx:63
+#: src/components/forms/lead/lead-form.jsx:97
 msgid "leadForm.interest.option5"
 msgstr "Sohbet Kulubü"
 
-#: src/components/forms/lead-form.jsx:69
+#: src/components/forms/lead/lead-form.jsx:103
 msgid "leadForm.interest.option6"
 msgstr "Bire Bir Dersler"
 
-#: src/components/forms/lead-form.jsx:72
+#: src/components/forms/lead/lead-form.jsx:106
 msgid "leadForm.interest.option7"
 msgstr "Diğerleri"
 
-#: src/components/forms/lead-form.jsx:33
+#: src/components/forms/lead/lead-form.jsx:52
 msgid "leadForm.lname"
 msgstr "Soyadın"
 
-#: src/components/forms/lead-form.jsx:44
+#: src/components/forms/lead/lead-form.jsx:67
 msgid "leadForm.phone"
 msgstr "Telefon"
 
-#: src/components/forms/lead-form.jsx:85
+#: src/components/forms/lead/lead-form-submission.jsx:16
 msgid "leadForm.submit-btn"
 msgstr "Gönder"
 
-#: src/components/header.jsx:48
+#: src/components/forms/lead/lead-form-submission.jsx:12
+msgid "leadForm.submit-btn-sending"
+msgstr "Gönderiliyor"
+
+#: src/components/header.jsx:51
+#: src/components/mobile-nav.jsx:41
 msgid "menu.about"
 msgstr "Bilgi"
 
-#: src/components/header.jsx:63
+#: src/components/header.jsx:61
+#: src/components/mobile-nav.jsx:51
 msgid "menu.contact"
 msgstr "İletişim"
 
-#: src/components/header.jsx:58
-msgid "menu.english-world"
-msgstr "English World"
-
-#: src/components/header.jsx:43
+#: src/components/header.jsx:46
+#: src/components/mobile-nav.jsx:36
 msgid "menu.home"
 msgstr "Anasayfa"
 
@@ -109,10 +128,16 @@ msgstr "Anasayfa"
 msgid "menu.language-switcher"
 msgstr "Change to English"
 
-#: src/components/header.jsx:53
+#: src/components/header.jsx:56
+#: src/components/mobile-nav.jsx:46
 msgid "menu.programs"
 msgstr "Programlar"
 
-#: src/components/header.jsx:68
+#: src/components/header.jsx:66
+#: src/components/mobile-nav.jsx:56
 msgid "menu.register"
 msgstr "Kaydol"
+
+#: src/components/parts/home/programs.jsx:23
+msgid "programs.headline"
+msgstr "İngilizce <0>Programlarımız</0>"

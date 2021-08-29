@@ -1,0 +1,51 @@
+.input-two-col {
+  display: grid;
+  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  column-gap: 10px;
+  margin-bottom: -5px;
+}
+
+.lead-form button {
+  display: block;
+  margin-top: 20px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  min-width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 6px 12px;
+  line-height: 1.5;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.lead-form button:hover {
+  background: black;
+  color: white;
+}
+
+.thankyou-page {
+  display: grid;
+  background: white;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  align-content: center;
+}
+
+.thankyou-page h1 {
+  font-size: 40px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #15c515;
+}
+
+.thankyou-page p {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 20px 0;
+  color: black;
+}

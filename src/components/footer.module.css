@@ -1,0 +1,89 @@
+.footer-content-wrapper {
+  grid-area: 1/1;
+  position: relative;
+  place-items: center;
+  display: grid;
+  background-color: #c0272d;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.footer-content-right {
+  padding: 20px 40px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 25%);
+  color: black;
+  margin: 10px;
+}
+
+.footer-content-left h2 {
+  color: white;
+  font-size: 52px;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.footer-contact-info {
+  color: white;
+  padding: 40px;
+}
+
+.footer-contact-info > a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.footer-contact-info > a > span {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.footer-contact-info > a:hover {
+  text-decoration: underline;
+}
+
+.form-title {
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.form-subtitle {
+  color: black;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 20px 30px;
+}
+
+.google-map > iframe {
+  border: 0;
+  width: 100%;
+  height: 300px;
+  pointer-events: none;
+}
+
+.colophon {
+  background: black;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 30px 0px;
+}
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+.program {
+  position: relative;
+  margin: 10px;
+  max-width: 400px;
+}
+.program-content-wrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding-bottom: 50px;
+}
+
+.program-content {
+  padding: 20px;
+}
+
+.program-content-wrapper h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.program-content-wrapper p {
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.program-btn {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  background: color;
+  transition: 0.3s all;
+}
+
+.program-btn:hover {
+  color: white;
+  background: black;
+}
+
+@media (max-width: 992px) {
+  .program {
+    margin: 10px auto;
+  }
+}

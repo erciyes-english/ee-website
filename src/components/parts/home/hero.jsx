@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
 import { Trans } from "@lingui/macro";
 import { LocalizedLink as Link } from "gatsby-theme-i18n";
-import LeadForm from "../../forms/lead-form";
+import LeadForm from "../../forms/lead/lead-form";
 
 const Hero = () => (
   <div style={{ display: "grid" }}>
@@ -46,7 +46,7 @@ const Hero = () => (
               begin your english <strong>journey today!</strong>
             </Trans>
           </h2>
-          <LeadForm />
+          <LeadForm errorTextColor="white" />
         </div>
       </div>
     </div>

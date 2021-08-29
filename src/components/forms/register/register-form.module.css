@@ -1,0 +1,49 @@
+.register-page {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.thankyou-page {
+  display: grid;
+  background: white;
+  max-width: 1200px;
+  margin: 0px auto;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  height: 80vh;
+  align-content: center;
+}
+
+.thankyou-page h1 {
+  font-size: 60px;
+  vertical-align: middle;
+  font-weight: bold;
+  color: #15c515;
+}
+
+.thankyou-page p {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.register-form-wrapper,
+.register-summary-wrapper {
+  margin: 20px;
+}
+
+.input-two-col {
+  display: grid;
+  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+  column-gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .register-page {
+    grid-template-columns: 100%;
+  }
+}

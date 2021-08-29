@@ -1,15 +1,16 @@
 import * as React from "react";
-import Header from "../components/header";
-import Seo from "../components/seo";
-import Hero from "../components/parts/home/hero";
 import About from "../components/parts/home/about";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Hero from "../components/parts/home/hero";
+import Programs from "../components/parts/home/programs";
+import Seo from "../components/seo";
 
 import { graphql } from "gatsby";
 
 const IndexPage = ({ data }) => {
-  const sectionData = data.allMdx.nodes;
-  const aboutData = sectionData.find((m) => m.frontmatter.key === "about");
-  console.log(data);
+  const aboutData = data.about.nodes[0];
+  const programData = data.program.nodes;
   return (
     <main>
       <Seo>
@@ -18,23 +19,43 @@ const IndexPage = ({ data }) => {
       <Header />
       <Hero />
       <About data={aboutData} />
+      <Programs data={programData} />
+      <Footer />
     </main>
   );
 };
 
 export const query = graphql`
   query ($locale: String!) {
-    allMdx(
+    about: allMdx(
       filter: {
-        frontmatter: { slug: { eq: "/" } }
+        frontmatter: { slug: { eq: "/" }, key: { eq: "about" } }
         fields: { locale: { eq: $locale } }
       }
     ) {
       nodes {
         frontmatter {
-          slug
           title
-          key
+        }
+        body
+      }
+    }
+    program: allMdx(
+      filter: {
+        frontmatter: { slug: { eq: "/" }, key: { eq: "program" } }
+        fields: { locale: { eq: $locale } }
+      }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          buttonText
+          buttonHref
+          remoteImageUrl {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.7778)
+            }
+          }
         }
         body
       }

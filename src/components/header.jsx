@@ -6,13 +6,16 @@ import { Trans } from "@lingui/react";
 import LanguageSwitcher from "./language-switcher";
 
 import * as headerStyles from "./header.module.css";
+import MobileNav from "./mobile-nav";
 
-const Header = () => {
-  const [small, setSmall] = React.useState(false);
+const Header = ({ isSmall }) => {
+  const [small, setSmall] = React.useState(isSmall ? true : false);
 
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => setSmall(window.pageYOffset > 0));
+      window.addEventListener("scroll", () =>
+        setSmall(window.pageYOffset > 0 || isSmall)
+      );
     }
   }, []);
 
@@ -36,7 +39,7 @@ const Header = () => {
         </div>
         <div className="header-right">
           <LanguageSwitcher />
-          <nav>
+          <nav className={headerStyles.mainNav}>
             <ul>
               <li>
                 <Link to="/">
@@ -54,11 +57,6 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/category/english-world">
-                  <Trans id="menu.english-world">English World</Trans>
-                </Link>
-              </li>
-              <li>
                 <Link to="/#contact">
                   <Trans id="menu.contact">Contact</Trans>
                 </Link>
@@ -70,6 +68,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+          <MobileNav iconColor={small ? "black" : "white"} />
         </div>
       </div>
     </header>

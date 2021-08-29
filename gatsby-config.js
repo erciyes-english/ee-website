@@ -47,6 +47,28 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Erciyes English`,
+        short_name: `Erciyes English`,
+        icon: `src/images/icon.png`,
+        start_url: `/tr/`,
+        lang: `tr`,
+        background_color: `##c0272d`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        localize: [
+          {
+            start_url: `/en/`,
+            lang: `en`,
+            name: `Erciyes English`,
+            short_name: `Erciyes English`,
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

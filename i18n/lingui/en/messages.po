@@ -13,6 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/footer.jsx:61
+msgid "footer.form-desc"
+msgstr "Fill out this form and someone from our office will contact you!"
+
+#: src/components/footer.jsx:56
+msgid "footer.form-title"
+msgstr "More <0>Questions?</0>"
+
+#: src/components/footer.jsx:19
+msgid "footer.headline"
+msgstr "Get <0>In Touch</0>"
+
+#: src/components/forms/lead/lead-validation-schema.jsx:9
+msgid "form.schema.name.min"
+msgstr "Name must be longer than 2 characters."
+
 #: src/components/parts/home/hero.jsx:36
 msgid "hero.btn1"
 msgstr "Programs"
@@ -33,75 +49,78 @@ msgstr "sharing <0>life.</0>"
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
 
-#: src/components/forms/lead-form.jsx:39
+#: src/components/forms/lead/lead-form.jsx:60
 msgid "leadForm.email"
 msgstr "E-mail"
 
-#: src/components/forms/lead-form.jsx:29
+#: src/components/forms/lead/lead-form.jsx:45
 msgid "leadForm.fname"
 msgstr "First Name"
 
-#: src/components/forms/lead-form.jsx:78
+#: src/components/forms/lead/lead-form.jsx:112
 msgid "leadForm.gdpr"
 msgstr "I consent to having this website store my submitted information so they can respond to my inquiry"
 
-#: src/components/forms/lead-form.jsx:48
+#: src/components/forms/lead/lead-form.jsx:79
 msgid "leadForm.interest"
 msgstr "Interested In?"
 
-#: src/components/forms/lead-form.jsx:51
+#: src/components/forms/lead/lead-form.jsx:82
 msgid "leadForm.interest.option1"
 msgstr "Phase 1"
 
-#: src/components/forms/lead-form.jsx:54
+#: src/components/forms/lead/lead-form.jsx:85
 msgid "leadForm.interest.option2"
 msgstr "Phase 2"
 
-#: src/components/forms/lead-form.jsx:57
+#: src/components/forms/lead/lead-form.jsx:88
 msgid "leadForm.interest.option3"
 msgstr "Phase 3"
 
-#: src/components/forms/lead-form.jsx:60
+#: src/components/forms/lead/lead-form.jsx:91
 msgid "leadForm.interest.option4"
 msgstr "Connect Program"
 
-#: src/components/forms/lead-form.jsx:63
+#: src/components/forms/lead/lead-form.jsx:97
 msgid "leadForm.interest.option5"
 msgstr "Conversation Club"
 
-#: src/components/forms/lead-form.jsx:69
+#: src/components/forms/lead/lead-form.jsx:103
 msgid "leadForm.interest.option6"
 msgstr "One-on-one"
 
-#: src/components/forms/lead-form.jsx:72
+#: src/components/forms/lead/lead-form.jsx:106
 msgid "leadForm.interest.option7"
 msgstr "Other"
 
-#: src/components/forms/lead-form.jsx:33
+#: src/components/forms/lead/lead-form.jsx:52
 msgid "leadForm.lname"
 msgstr "Last Name"
 
-#: src/components/forms/lead-form.jsx:44
+#: src/components/forms/lead/lead-form.jsx:67
 msgid "leadForm.phone"
 msgstr "Phone"
 
-#: src/components/forms/lead-form.jsx:85
+#: src/components/forms/lead/lead-form-submission.jsx:16
 msgid "leadForm.submit-btn"
 msgstr "Send"
 
-#: src/components/header.jsx:48
+#: src/components/forms/lead/lead-form-submission.jsx:12
+msgid "leadForm.submit-btn-sending"
+msgstr "Sending"
+
+#: src/components/header.jsx:51
+#: src/components/mobile-nav.jsx:41
 msgid "menu.about"
 msgstr "About"
 
-#: src/components/header.jsx:63
+#: src/components/header.jsx:61
+#: src/components/mobile-nav.jsx:51
 msgid "menu.contact"
 msgstr "Contact"
 
-#: src/components/header.jsx:58
-msgid "menu.english-world"
-msgstr "English World"
-
-#: src/components/header.jsx:43
+#: src/components/header.jsx:46
+#: src/components/mobile-nav.jsx:36
 msgid "menu.home"
 msgstr "Home"
 
@@ -109,10 +128,16 @@ msgstr "Home"
 msgid "menu.language-switcher"
 msgstr "Türkçeye Geçmek"
 
-#: src/components/header.jsx:53
+#: src/components/header.jsx:56
+#: src/components/mobile-nav.jsx:46
 msgid "menu.programs"
 msgstr "Programs"
 
-#: src/components/header.jsx:68
+#: src/components/header.jsx:66
+#: src/components/mobile-nav.jsx:56
 msgid "menu.register"
 msgstr "Register"
+
+#: src/components/parts/home/programs.jsx:23
+msgid "programs.headline"
+msgstr "Our <0>English Programs</0>"
