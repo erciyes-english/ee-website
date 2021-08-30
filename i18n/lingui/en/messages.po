@@ -137,3 +137,127 @@ msgstr "Register"
 #: src/components/parts/home/programs.jsx:23
 msgid "programs.headline"
 msgstr "Our <0>English Programs</0>"
+
+#: src/components/forms/register/register-form.jsx:146
+msgid "registerForm.address1.label"
+msgstr "Address Line 1*"
+
+#: src/components/forms/register/register-form.jsx:150
+msgid "registerForm.address1.placeholder"
+msgstr "Full address, business name, c/o"
+
+#: src/components/forms/register/register-form.jsx:157
+msgid "registerForm.address2.label"
+msgstr "Address Line 2*"
+
+#: src/components/forms/register/register-form.jsx:161
+msgid "registerForm.address2.placeholder"
+msgstr "Apartment, flat, floor, etc."
+
+#: src/components/forms/register/register-form.jsx:169
+msgid "registerForm.city.label"
+msgstr "City*"
+
+#: src/components/forms/register/register-form.jsx:173
+msgid "registerForm.city.placeholder"
+msgstr "Talas"
+
+#: src/components/forms/register/register-form.jsx:59
+msgid "registerForm.course.label"
+msgstr "Which course are you registering for?*"
+
+#: src/components/forms/register/register-form.jsx:66
+msgid "registerForm.course.option0"
+msgstr "Select your course..."
+
+#: src/components/forms/register/register-form.jsx:72
+msgid "registerForm.course.option1"
+msgstr "Phase 1 - Fall Semester"
+
+#: src/components/forms/register/register-form.jsx:78
+msgid "registerForm.course.option2"
+msgstr "Phase 2 - Fall Semester"
+
+#: src/components/forms/register/register-form.jsx:84
+msgid "registerForm.course.option3"
+msgstr "Phase 3 - Fall Semester"
+
+#: src/components/forms/register/register-form.jsx:90
+msgid "registerForm.course.option4"
+msgstr "Connect Program"
+
+#: src/components/forms/register/register-form.jsx:123
+msgid "registerForm.email.label"
+msgstr "Email*"
+
+#: src/components/forms/register/register-form.jsx:127
+msgid "registerForm.email.placeholder"
+msgstr "mike@example.com"
+
+#: src/components/forms/register/register-form.jsx:99
+msgid "registerForm.fname.label"
+msgstr "First Name*"
+
+#: src/components/forms/register/register-form.jsx:103
+msgid "registerForm.fname.placeholder"
+msgstr "Mike"
+
+#: src/components/forms/register/register-form.jsx:236
+msgid "registerForm.gdpr"
+msgstr "I consent to having this website store my submitted information so they can respond to my inquiry."
+
+#: src/components/forms/register/register-form.jsx:220
+msgid "registerForm.groupDiscount"
+msgstr "Are you part of a group?"
+
+#: src/components/forms/register/register-form.jsx:193
+msgid "registerForm.installments.label"
+msgstr "How many payments?*"
+
+#: src/components/forms/register/register-form.jsx:200
+msgid "registerForm.installments.option0"
+msgstr "Please select..."
+
+#: src/components/forms/register/register-form.jsx:206
+msgid "registerForm.installments.option1"
+msgstr "One Payment"
+
+#: src/components/forms/register/register-form.jsx:212
+msgid "registerForm.installments.option2"
+msgstr "Two Payments"
+
+#: src/components/forms/register/register-form.jsx:110
+msgid "registerForm.lname.label"
+msgstr "Last Name*"
+
+#: src/components/forms/register/register-form.jsx:114
+msgid "registerForm.lname.placeholder"
+msgstr "Smith"
+
+#: src/components/forms/register/register-form.jsx:228
+msgid "registerForm.otherDiscount"
+msgstr "Are you part of something?"
+
+#: src/components/forms/register/register-form.jsx:134
+msgid "registerForm.phone.label"
+msgstr "Phone*"
+
+#: src/components/forms/register/register-form.jsx:138
+msgid "registerForm.phone.placeholder"
+msgstr "0 538 007 11 22"
+
+#: src/components/forms/register/register-form.jsx:180
+msgid "registerForm.province.label"
+msgstr "Province*"
+
+#: src/components/forms/register/register-form.jsx:184
+msgid "registerForm.province.placeholder"
+msgstr "Kayseri"
+
+#: src/components/forms/register/register-form.jsx:45
+msgid "registerForm.thankyou.headline"
+msgstr "Sent!"
+
+#: src/components/forms/register/register-form.jsx:48
+msgid "registerForm.thankyou.text"
+msgstr "Thank you for registering!"
