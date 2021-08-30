@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Form, Formik } from "formik";
-import { t } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 import * as leadFormStyles from "./lead-form.module.css";
 import { FaCheckCircle } from "react-icons/fa";
 import FieldWrapper from "../field-wrapper";
@@ -40,9 +40,12 @@ const LeadForm = ({ errorTextColor }) => {
       {isSent ? (
         <div className={leadFormStyles.thankyouPage}>
           <h1>
-            <FaCheckCircle /> Sent!
+            <FaCheckCircle />{" "}
+            <Trans id="leadForm.thankyou.headline">Sent!</Trans>
           </h1>
-          <p>We'll answer shortly!</p>
+          <p>
+            <Trans id="leadForm.thankyou.text">We'll answer shortly!</Trans>
+          </p>
         </div>
       ) : (
         <Form className={leadFormStyles.leadForm}>

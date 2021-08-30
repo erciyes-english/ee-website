@@ -45,55 +45,55 @@ msgstr "sharing <0>life.</0>"
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
 
-#: src/components/forms/lead/lead-form.jsx:68
+#: src/components/forms/lead/lead-form.jsx:71
 msgid "leadForm.email"
 msgstr "E-mail"
 
-#: src/components/forms/lead/lead-form.jsx:53
+#: src/components/forms/lead/lead-form.jsx:56
 msgid "leadForm.fname"
 msgstr "First Name"
 
-#: src/components/forms/lead/lead-form.jsx:120
+#: src/components/forms/lead/lead-form.jsx:123
 msgid "leadForm.gdpr"
 msgstr "I consent to having this website store my submitted information so they can respond to my inquiry"
 
-#: src/components/forms/lead/lead-form.jsx:87
+#: src/components/forms/lead/lead-form.jsx:90
 msgid "leadForm.interest"
 msgstr "Interested In?"
 
-#: src/components/forms/lead/lead-form.jsx:90
+#: src/components/forms/lead/lead-form.jsx:93
 msgid "leadForm.interest.option1"
 msgstr "Phase 1"
 
-#: src/components/forms/lead/lead-form.jsx:93
+#: src/components/forms/lead/lead-form.jsx:96
 msgid "leadForm.interest.option2"
 msgstr "Phase 2"
 
-#: src/components/forms/lead/lead-form.jsx:96
+#: src/components/forms/lead/lead-form.jsx:99
 msgid "leadForm.interest.option3"
 msgstr "Phase 3"
 
-#: src/components/forms/lead/lead-form.jsx:99
+#: src/components/forms/lead/lead-form.jsx:102
 msgid "leadForm.interest.option4"
 msgstr "Connect Program"
 
-#: src/components/forms/lead/lead-form.jsx:105
+#: src/components/forms/lead/lead-form.jsx:108
 msgid "leadForm.interest.option5"
 msgstr "Conversation Club"
 
-#: src/components/forms/lead/lead-form.jsx:111
+#: src/components/forms/lead/lead-form.jsx:114
 msgid "leadForm.interest.option6"
 msgstr "One-on-one"
 
-#: src/components/forms/lead/lead-form.jsx:114
+#: src/components/forms/lead/lead-form.jsx:117
 msgid "leadForm.interest.option7"
 msgstr "Other"
 
-#: src/components/forms/lead/lead-form.jsx:60
+#: src/components/forms/lead/lead-form.jsx:63
 msgid "leadForm.lname"
 msgstr "Last Name"
 
-#: src/components/forms/lead/lead-form.jsx:75
+#: src/components/forms/lead/lead-form.jsx:78
 msgid "leadForm.phone"
 msgstr "Phone"
 
@@ -104,6 +104,14 @@ msgstr "Send"
 #: src/components/forms/lead/lead-form-submission.jsx:12
 msgid "leadForm.submit-btn-sending"
 msgstr "Sending"
+
+#: src/components/forms/lead/lead-form.jsx:44
+msgid "leadForm.thankyou.headline"
+msgstr "Sent!"
+
+#: src/components/forms/lead/lead-form.jsx:47
+msgid "leadForm.thankyou.text"
+msgstr "We'll answer shortly!"
 
 #: src/components/header.jsx:51
 #: src/components/mobile-nav.jsx:41
