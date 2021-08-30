@@ -145,3 +145,167 @@ msgstr "Kaydol"
 #: src/components/parts/home/programs.jsx:23
 msgid "programs.headline"
 msgstr "İngilizce <0>Programlarımız</0>"
+
+#: src/components/forms/register/register-form.jsx:146
+msgid "registerForm.address1.label"
+msgstr "Adres satırı 1*"
+
+#: src/components/forms/register/register-form.jsx:150
+msgid "registerForm.address1.placeholder"
+msgstr "Açık adres, şirket adı, c/o"
+
+#: src/components/forms/register/register-form.jsx:157
+msgid "registerForm.address2.label"
+msgstr "dres satırı 2"
+
+#: src/components/forms/register/register-form.jsx:161
+msgid "registerForm.address2.placeholder"
+msgstr "Apartman, daire, ünite, bina, kat vb."
+
+#: src/components/forms/register/register-form.jsx:169
+msgid "registerForm.city.label"
+msgstr "İlçe"
+
+#: src/components/forms/register/register-form.jsx:173
+msgid "registerForm.city.placeholder"
+msgstr "Talas"
+
+#: src/components/forms/register/register-form.jsx:59
+msgid "registerForm.course.label"
+msgstr "Hangi kursa kayıt oluyorsunuz?*"
+
+#: src/components/forms/register/register-form.jsx:66
+msgid "registerForm.course.option0"
+msgstr "Kursunuzu seçin..."
+
+#: src/components/forms/register/register-form.jsx:72
+msgid "registerForm.course.option1"
+msgstr "Aşama 1 - Sonbahar Dönemi"
+
+#: src/components/forms/register/register-form.jsx:78
+msgid "registerForm.course.option2"
+msgstr "Aşama 2 - Sonbahar Dönemi"
+
+#: src/components/forms/register/register-form.jsx:84
+msgid "registerForm.course.option3"
+msgstr "Aşama 3 - Sonbahar Dönemi"
+
+#: src/components/forms/register/register-form.jsx:90
+msgid "registerForm.course.option4"
+msgstr "Bağlantı Programı"
+
+#: src/components/forms/register/register-form.jsx:123
+msgid "registerForm.email.label"
+msgstr "E-mail*"
+
+#: src/components/forms/register/register-form.jsx:127
+msgid "registerForm.email.placeholder"
+msgstr "nese@example.com"
+
+#: src/components/forms/register/register-form.jsx:99
+msgid "registerForm.fname.label"
+msgstr "Adın"
+
+#: src/components/forms/register/register-form.jsx:103
+msgid "registerForm.fname.placeholder"
+msgstr "Ahmet"
+
+#: src/components/forms/register/register-form.jsx:236
+msgid "registerForm.gdpr"
+msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
+
+#: src/components/forms/register/register-form.jsx:220
+msgid "registerForm.groupDiscount"
+msgstr "Bir grubun parçası olarak mı kayıt oluyorsun?"
+
+#: src/components/forms/register/register-form.jsx:193
+msgid "registerForm.installments.label"
+msgstr "Taksit Seçenekleri"
+
+#: src/components/forms/register/register-form.jsx:200
+msgid "registerForm.installments.option0"
+msgstr "Lütfen seç..."
+
+#: src/components/forms/register/register-form.jsx:206
+msgid "registerForm.installments.option1"
+msgstr "Peşin"
+
+#: src/components/forms/register/register-form.jsx:212
+msgid "registerForm.installments.option2"
+msgstr "İki Taksit"
+
+#: src/components/forms/register/register-form.jsx:110
+msgid "registerForm.lname.label"
+msgstr "Soyadın"
+
+#: src/components/forms/register/register-form.jsx:114
+msgid "registerForm.lname.placeholder"
+msgstr "Batur"
+
+#: src/components/forms/register/register-form.jsx:228
+msgid "registerForm.otherDiscount"
+msgstr "Bir şeyin parçası olarak mı kayıt oluyorsun?"
+
+#: src/components/forms/register/register-form.jsx:134
+msgid "registerForm.phone.label"
+msgstr "Telefon"
+
+#: src/components/forms/register/register-form.jsx:138
+msgid "registerForm.phone.placeholder"
+msgstr "0 538 007 11 22"
+
+#: src/components/forms/register/register-form.jsx:180
+msgid "registerForm.province.label"
+msgstr "Şehir"
+
+#: src/components/forms/register/register-form.jsx:184
+msgid "registerForm.province.placeholder"
+msgstr "Kayseri"
+
+#: src/components/forms/register/submission-zone.jsx:118
+msgid "registerForm.submit.button"
+msgstr "Kaydı Tamamla"
+
+#: src/components/forms/register/submission-zone.jsx:114
+msgid "registerForm.submit.buttonSending"
+msgstr "Gönderiliyor..."
+
+#: src/components/forms/register/submission-zone.jsx:18
+msgid "registerForm.submit.course1"
+msgstr "Aşama 1 - Sonbahar Dönemi"
+
+#: src/components/forms/register/submission-zone.jsx:22
+msgid "registerForm.submit.course2"
+msgstr "Aşama 2 - Sonbahar Dönemi"
+
+#: src/components/forms/register/submission-zone.jsx:26
+msgid "registerForm.submit.course3"
+msgstr "Aşama 3 - Sonbahar Dönemi"
+
+#: src/components/forms/register/submission-zone.jsx:30
+msgid "registerForm.submit.course4"
+msgstr "Bağlantı Programı"
+
+#: src/components/forms/register/submission-zone.jsx:92
+msgid "registerForm.submit.groupDiscount"
+msgstr "%10 Grup indirimi uygulandı"
+
+#: src/components/forms/register/submission-zone.jsx:106
+msgid "registerForm.submit.oneDiscount"
+msgstr "100TL Peşin indirimi uygulanır."
+
+#: src/components/forms/register/submission-zone.jsx:99
+msgid "registerForm.submit.otherDiscount"
+msgstr "%10 Diğer indirim uygulandı"
+
+#: src/components/forms/register/submission-zone.jsx:78
+msgid "registerForm.submit.price.label"
+msgstr "Toplam:"
+
+#: src/components/forms/register/register-form.jsx:45
+msgid "registerForm.thankyou.headline"
+msgstr "Gönderildi!"
+
+#: src/components/forms/register/register-form.jsx:48
+msgid "registerForm.thankyou.text"
+msgstr "Kayıt olduğunuz için teşekkürler!"

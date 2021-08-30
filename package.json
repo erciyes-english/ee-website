@@ -8,14 +8,14 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
+    "develop": "lingui compile && gatsby develop",
+    "start": "lingui compile && gatsby develop",
+    "build": "lingui compile && gatsby build",
+    "serve": "lingui compile && gatsby serve",
     "clean": "gatsby clean",
     "extract": "lingui extract",
     "compile": "lingui compile",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "lingui compile gatsby build --prefix-paths"
   },
   "dependencies": {
     "@lingui/core": "^3.10.2",

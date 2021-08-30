@@ -1,5 +1,5 @@
 node_modules/
 .cache/
 public
-
+i18n/**/*.js
 .DS_Store
