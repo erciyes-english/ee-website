@@ -7,9 +7,10 @@ import Seo from "../components/seo";
 const RegisterPage = ({ data }) => {
   return (
     <main>
-      <Seo>
-        <title>Erciyes English</title>
-      </Seo>
+      <Seo
+        title="Begin your English journey today"
+        description="Register for our English courses today to improve your English fluency. We're located in Kayseri, Turkey."
+      ></Seo>
       <Header isSmall={true} />
       <div
         style={{

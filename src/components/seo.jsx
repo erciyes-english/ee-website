@@ -10,6 +10,7 @@ const Seo = ({ description, title, children }) => {
           siteMetadata {
             title
             description
+            author
           }
         }
       }
@@ -19,7 +20,7 @@ const Seo = ({ description, title, children }) => {
   const metaDescription = description || site.siteMetadata.description;
 
   return (
-    <Helmet title={title} titleTemplate={`%s | ${site.siteMetadata.title}`}>
+    <Helmet title={title} titleTemplate={`${site.siteMetadata.title} | %s`}>
       <meta name="description" content={metaDescription} />
       <meta name="og:title" content={title} />
       <meta name="og:description" content={metaDescription} />

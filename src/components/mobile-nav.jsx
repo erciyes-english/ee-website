@@ -18,6 +18,7 @@ const MobileNav = ({ iconColor }) => {
   return (
     <div className={mobileNavStyles.mobileNav}>
       <button
+        aria-label="Mobile Menu Toggle"
         type="button"
         className={mobileNavStyles.hamburger}
         onClick={handleOpen}
