@@ -5,11 +5,18 @@ import * as registerFormStyles from "./register-form.module.css";
 
 import { FaCheckCircle } from "react-icons/fa";
 import FieldWrapper from "../field-wrapper";
-import RegisterValidationSchema from "./register-validation-schema";
+import {
+  RegisterValidationSchemaEn,
+  RegisterValidationSchemaTr,
+} from "./register-validation-schema";
+import { useLocalization } from "gatsby-theme-i18n";
 import SubmissionZone from "./submission-zone";
 
 const RegisterForm = () => {
   const [isSent, setIsSent] = React.useState(false);
+  const { locale } = useLocalization();
+  const localValidation =
+    locale === "en" ? RegisterValidationSchemaEn : RegisterValidationSchemaTr;
   return (
     <Formik
       initialValues={{
@@ -27,7 +34,7 @@ const RegisterForm = () => {
         otherDiscount: false,
         gdpr: false,
       }}
-      validationSchema={RegisterValidationSchema}
+      validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
         console.log("submiting");
         // axios -> POST request to cloudflare worker.
