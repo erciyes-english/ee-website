@@ -25,6 +25,7 @@ const FieldWrapper = ({
         <label htmlFor={fieldName}>{label}</label>
       ) : null}
       <Field
+        id={fieldName}
         as={as}
         type={type}
         name={fieldName}

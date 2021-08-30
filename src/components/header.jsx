@@ -28,7 +28,7 @@ const Header = ({ isSmall }) => {
       <div className="header-upper"></div>
       <div className={headerStyles.headerLower}>
         <div className={headerStyles.logo}>
-          <Link to="/">
+          <Link to="/" aria-label="Go to the Erciyes English homepage">
             <div className={headerStyles.logoMark}>
               <EeLogoMark />
             </div>
