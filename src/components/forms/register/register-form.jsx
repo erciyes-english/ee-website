@@ -223,7 +223,6 @@ const RegisterForm = () => {
               </div>
               <FieldWrapper
                 fieldName="installments"
-                label="How many payments?*"
                 label={t({
                   id: "registerForm.installments.label",
                   message: "How many payments*",
