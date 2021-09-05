@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as fieldStyles from "./field-wrapper.module.css";
 import { Field, useFormikContext } from "formik";
+let uniqueId = 0;
 
 const FieldWrapper = ({
   fieldName,
@@ -19,13 +20,15 @@ const FieldWrapper = ({
   const { errors, touched } = useFormikContext();
 
   const checkboxStyle = type === "checkbox" ? fieldStyles.isCheckbox : null;
+
+  uniqueId++;
   return (
     <div className={`${fieldStyles.fieldWrapper} ${checkboxStyle}`}>
       {type !== "checkbox" && !hideLabel ? (
-        <label htmlFor={fieldName}>{label}</label>
+        <label htmlFor={`${fieldName}-${uniqueId}`}>{label}</label>
       ) : null}
       <Field
-        id={fieldName}
+        id={`${fieldName}-${uniqueId}`}
         as={as}
         type={type}
         name={fieldName}
@@ -36,7 +39,9 @@ const FieldWrapper = ({
       >
         {children}
       </Field>
-      {type === "checkbox" ? <label htmlFor={fieldName}>{label}</label> : null}
+      {type === "checkbox" ? (
+        <label htmlFor={`${fieldName}-${uniqueId}`}>{label}</label>
+      ) : null}
       <p className={fieldStyles.fieldError} style={{ color: errorTextColor }}>
         {errors[fieldName] && touched[fieldName] ? (
           <span>{errors[fieldName]}</span>

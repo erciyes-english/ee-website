@@ -70,7 +70,7 @@ const SubmissionZone = () => {
     }
 
     setTotalPrice(total);
-  }, [values]);
+  });
   return (
     <div className={submissionStyles.summary}>
       <p>
