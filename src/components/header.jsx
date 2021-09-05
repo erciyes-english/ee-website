@@ -17,7 +17,7 @@ const Header = ({ isSmall }) => {
         setSmall(window.pageYOffset > 0 || isSmall)
       );
     }
-  }, []);
+  }, [isSmall]);
 
   return (
     <header

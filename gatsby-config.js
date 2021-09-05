@@ -56,7 +56,7 @@ module.exports = {
         icon: `src/images/icon.png`,
         start_url: `/tr/`,
         lang: `tr`,
-        background_color: `##c0272d`,
+        background_color: `#c0272d`,
         theme_color: `#ffffff`,
         display: `standalone`,
         localize: [

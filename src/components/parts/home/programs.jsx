@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Trans } from "@lingui/macro";
 
 const Programs = ({ data }) => {
-  console.log(data);
   return (
     <div id="programs" style={{ display: "grid", position: "relative" }}>
       <StaticImage
