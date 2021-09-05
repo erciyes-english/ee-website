@@ -62,7 +62,7 @@ const Footer = () => (
               Fill out this form and someone from our office will contact you!
             </Trans>
           </p>
-          <LeadForm />
+          <LeadForm errorTextColor={"red"} />
         </div>
       </div>
     </div>

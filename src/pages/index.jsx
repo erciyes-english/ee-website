@@ -13,9 +13,11 @@ const IndexPage = ({ data }) => {
   const programData = data.program.nodes;
   return (
     <main>
-      <Seo>
-        <title>Erciyes English</title>
-      </Seo>
+      <Seo
+        title="English learning in Kayseri, Turkey"
+        description="Erciyes English is a language center that exists to open the doors of
+          your future through English fluency. We&#039;re located in Kayseri, Turkey"
+      ></Seo>
       <Header />
       <Hero />
       <About data={aboutData} />

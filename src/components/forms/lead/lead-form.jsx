@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Form, Formik } from "formik";
-import { t } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 import * as leadFormStyles from "./lead-form.module.css";
 import { FaCheckCircle } from "react-icons/fa";
 import FieldWrapper from "../field-wrapper";
@@ -16,6 +16,7 @@ const LeadForm = ({ errorTextColor }) => {
   const localValidation =
     locale === "en" ? LeadValidationSchemaEn : LeadValidationSchemaTr;
   const [isSent, setIsSent] = React.useState(false);
+  const [isUnknownerror, setIsUnknownError] = React.useState(false);
 
   return (
     <Formik
@@ -29,23 +30,53 @@ const LeadForm = ({ errorTextColor }) => {
       }}
       validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
-        // axios -> POST request to cloudflare worker.
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-          setIsSent(true);
-        }, 400);
+        setIsUnknownError(false);
+        const url = "https://forms.erciyesenglish.workers.dev/forms/lead";
+        fetch(url, {
+          method: "POST",
+          body: JSON.stringify(values),
+        })
+          .then((response) => {
+            if (response.status !== 200) {
+              throw new Error("Server Error");
+            } else {
+              return response.json();
+            }
+          })
+          .then(() => {
+            setSubmitting(false);
+            setIsSent(true);
+          })
+          .catch(() => {
+            setSubmitting(false);
+            setIsUnknownError(true);
+          });
       }}
     >
       {isSent ? (
         <div className={leadFormStyles.thankyouPage}>
           <h1>
-            <FaCheckCircle /> Sent!
+            <FaCheckCircle />{" "}
+            <Trans id="leadForm.thankyou.headline">Sent!</Trans>
           </h1>
-          <p>We'll answer shortly!</p>
+          <p>
+            <Trans id="leadForm.thankyou.text">We'll answer shortly!</Trans>
+          </p>
         </div>
       ) : (
         <Form className={leadFormStyles.leadForm}>
+          <p
+            style={{
+              display: isUnknownerror ? "block" : "none",
+              color: errorTextColor,
+              marginBottom: "20px",
+              fontWeight: "bold",
+              fontSize: "12px",
+              textAlign: "center",
+            }}
+          >
+            There was an unknown error. Please try again.
+          </p>
           <div className={leadFormStyles.inputTwoCol}>
             <FieldWrapper
               fieldName="fname"

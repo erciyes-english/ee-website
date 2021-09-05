@@ -13,7 +13,7 @@ const Programs = ({ data }) => {
         layout="fullWidth"
         alt="Erciyes Mountain"
         src={
-          "https://images.unsplash.com/photo-1508901614289-62077b0a954d?w=2589"
+          "https://images.unsplash.com/photo-1566682372561-2273e5226306?w=2000"
         }
         placeholder="blurred"
         formats={["auto", "webp", "avif"]}

@@ -1,15 +1,23 @@
 import * as React from "react";
 import { Form, Formik } from "formik";
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 import * as registerFormStyles from "./register-form.module.css";
 
 import { FaCheckCircle } from "react-icons/fa";
 import FieldWrapper from "../field-wrapper";
-import RegisterValidationSchema from "./register-validation-schema";
+import {
+  RegisterValidationSchemaEn,
+  RegisterValidationSchemaTr,
+} from "./register-validation-schema";
+import { useLocalization } from "gatsby-theme-i18n";
 import SubmissionZone from "./submission-zone";
 
 const RegisterForm = () => {
   const [isSent, setIsSent] = React.useState(false);
+  const [isUnknownerror, setIsUnknownError] = React.useState(false);
+  const { locale } = useLocalization();
+  const localValidation =
+    locale === "en" ? RegisterValidationSchemaEn : RegisterValidationSchemaTr;
   return (
     <Formik
       initialValues={{
@@ -27,114 +35,243 @@ const RegisterForm = () => {
         otherDiscount: false,
         gdpr: false,
       }}
-      validationSchema={RegisterValidationSchema}
+      validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
-        console.log("submiting");
-        // axios -> POST request to cloudflare worker.
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-          setIsSent(true);
-        }, 400);
+        setIsUnknownError(false);
+        const url = "https://forms.erciyesenglish.workers.dev/forms/register";
+        fetch(url, {
+          method: "POST",
+          body: JSON.stringify(values),
+        })
+          .then((response) => {
+            if (response.status !== 200) {
+              throw new Error("Server Error");
+            } else {
+              return response.json();
+            }
+          })
+          .then(() => {
+            setSubmitting(false);
+            setIsSent(true);
+          })
+          .catch(() => {
+            window.scrollTo(0, 0);
+            setSubmitting(false);
+            setIsUnknownError(true);
+          });
       }}
     >
       {isSent ? (
         <div className={registerFormStyles.thankyouPage}>
           <h1>
-            <FaCheckCircle /> Sent!
+            <FaCheckCircle />{" "}
+            <Trans id="registerForm.thankyou.headline">Sent!</Trans>!
           </h1>
-          <p>Thanks for registering!</p>
+          <p>
+            <Trans id="registerForm.thankyou.text">
+              Thanks for registering!
+            </Trans>
+          </p>
         </div>
       ) : (
         <div className={registerFormStyles.registerPage}>
           <div className={registerFormStyles.registerFormWrapper}>
+            <p
+              style={{
+                display: isUnknownerror ? "block" : "none",
+                color: "red",
+                marginBottom: "20px",
+                fontWeight: "bold",
+                fontSize: "18px",
+              }}
+            >
+              There was an unknown error. Please try again.
+            </p>
             <Form>
               <FieldWrapper
                 fieldName="course"
-                label="Which course are you registering for?*"
+                label={t({
+                  id: "registerForm.course.label",
+                  message: "Which course are you registering for?*",
+                })}
                 as="select"
               >
-                <option value="">Select your course...</option>
+                <option value="">
+                  {t({
+                    id: "registerForm.course.option0",
+                    message: "Select your course...",
+                  })}
+                </option>
                 <option value="Phase 1 - Fall Semester">
-                  Phase 1 - Fall Semester
+                  {t({
+                    id: "registerForm.course.option1",
+                    message: "Phase 1 - Fall Semester",
+                  })}
                 </option>
                 <option value="Phase 2 - Fall Semester">
-                  Phase 2 - Fall Semester
+                  {t({
+                    id: "registerForm.course.option2",
+                    message: "Phase 2 - Fall Semester",
+                  })}
                 </option>
                 <option value="Phase 3 - Fall Semester">
-                  Phase 3 - Fall Semester
+                  {t({
+                    id: "registerForm.course.option3",
+                    message: "Phase 3 - Fall Semester",
+                  })}
                 </option>
-                <option value="Connect Program">Connect Program</option>
+                <option value="Connect Program">
+                  {t({
+                    id: "registerForm.course.option4",
+                    message: "Connect Program",
+                  })}
+                </option>
               </FieldWrapper>
               <div className={registerFormStyles.inputTwoCol}>
                 <FieldWrapper
                   fieldName="fname"
-                  label="First Name*"
-                  placeholder="Mike"
+                  label={t({
+                    id: "registerForm.fname.label",
+                    message: "First Name*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.fname.placeholder",
+                    message: "Mike",
+                  })}
                 />
                 <FieldWrapper
                   fieldName="lname"
-                  label="Last Name*"
-                  placeholder="Smith"
+                  label={t({
+                    id: "registerForm.lname.label",
+                    message: "Last Name*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.lname.placeholder",
+                    message: "Smith",
+                  })}
                 />
               </div>
               <div className={registerFormStyles.inputTwoCol}>
                 <FieldWrapper
                   fieldName="email"
-                  label="Email*"
-                  placeholder="mike@example.com"
+                  label={t({
+                    id: "registerForm.email.label",
+                    message: "Email*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.email.placeholder",
+                    message: "mike@example.com",
+                  })}
                 />
                 <FieldWrapper
                   fieldName="phone"
-                  label="Phone*"
-                  placeholder="0 538 007 11 22"
+                  label={t({
+                    id: "registerForm.phone.label",
+                    message: "Phone*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.phone.placeholder",
+                    message: "0 538 007 11 22",
+                  })}
                 />
               </div>
               <FieldWrapper
                 fieldName="address1"
-                label="Address Line 1*"
-                placeholder="Full address, business name, c/o"
+                label={t({
+                  id: "registerForm.address1.label",
+                  message: "Address Line 1*",
+                })}
+                placeholder={t({
+                  id: "registerForm.address1.placeholder",
+                  message: "Full address, business name, c/o",
+                })}
               />
               <FieldWrapper
                 fieldName="address2"
-                label="Address Line 2"
-                placeholder="Apartment, flat, floor, etc."
+                label={t({
+                  id: "registerForm.address2.label",
+                  message: "Address Line 2*",
+                })}
+                placeholder={t({
+                  id: "registerForm.address2.placeholder",
+                  message: "Apartment, flat, floor, etc.",
+                })}
               />
               <div className={registerFormStyles.inputTwoCol}>
                 <FieldWrapper
                   fieldName="city"
-                  label="City*"
-                  placeholder="Talas"
+                  label={t({
+                    id: "registerForm.city.label",
+                    message: "City*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.city.placeholder",
+                    message: "Talas",
+                  })}
                 />
                 <FieldWrapper
                   fieldName="province"
-                  label="Province*"
-                  placeholder="Kayseri"
+                  label={t({
+                    id: "registerForm.province.label",
+                    message: "Province*",
+                  })}
+                  placeholder={t({
+                    id: "registerForm.province.placeholder",
+                    message: "Kayseri",
+                  })}
                 />
               </div>
               <FieldWrapper
                 fieldName="installments"
                 label="How many payments?*"
+                label={t({
+                  id: "registerForm.installments.label",
+                  message: "How many payments*",
+                })}
                 as="select"
               >
-                <option value="">Please select...</option>
-                <option value="One Payment">One Payment</option>
-                <option value="Two Payments">Two Payments</option>
+                <option value="">
+                  {t({
+                    id: "registerForm.installments.option0",
+                    message: "Please select...",
+                  })}
+                </option>
+                <option value="One Payment">
+                  {t({
+                    id: "registerForm.installments.option1",
+                    message: "One Payments",
+                  })}
+                </option>
+                <option value="Two Payments">
+                  {t({
+                    id: "registerForm.installments.option2",
+                    message: "Two Payments",
+                  })}
+                </option>
               </FieldWrapper>
               <FieldWrapper
                 fieldName="groupDiscount"
-                label="Are you part of a group?"
+                label={t({
+                  id: "registerForm.groupDiscount",
+                  message: "Are you part of a group?",
+                })}
                 type="checkbox"
               />
               <FieldWrapper
                 fieldName="otherDiscount"
-                label="Are you part of something?"
+                label={t({
+                  id: "registerForm.otherDiscount",
+                  message: "Are you part of something?",
+                })}
                 type="checkbox"
               />
               <FieldWrapper
                 fieldName="gdpr"
-                label="I consent to having this website store my submitted information so
-          they can respond to my inquiry."
+                label={t({
+                  id: "registerForm.gdpr",
+                  message:
+                    "I consent to having this website store my submitted information so they can respond to my inquiry",
+                })}
                 type="checkbox"
               />
             </Form>
