@@ -14,6 +14,7 @@ import SubmissionZone from "./submission-zone";
 
 const RegisterForm = () => {
   const [isSent, setIsSent] = React.useState(false);
+  const [isUnknownerror, setIsUnknownError] = React.useState(false);
   const { locale } = useLocalization();
   const localValidation =
     locale === "en" ? RegisterValidationSchemaEn : RegisterValidationSchemaTr;
@@ -36,13 +37,28 @@ const RegisterForm = () => {
       }}
       validationSchema={localValidation}
       onSubmit={(values, { setSubmitting }) => {
-        console.log("submiting");
-        // axios -> POST request to cloudflare worker.
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-          setIsSent(true);
-        }, 400);
+        setIsUnknownError(false);
+        const url = "https://forms.erciyesenglish.workers.dev/forms/register";
+        fetch(url, {
+          method: "POST",
+          body: JSON.stringify(values),
+        })
+          .then((response) => {
+            if (response.status !== 200) {
+              throw new Error("Server Error");
+            } else {
+              return response.json();
+            }
+          })
+          .then(() => {
+            setSubmitting(false);
+            setIsSent(true);
+          })
+          .catch(() => {
+            window.scrollTo(0, 0);
+            setSubmitting(false);
+            setIsUnknownError(true);
+          });
       }}
     >
       {isSent ? (
@@ -60,6 +76,17 @@ const RegisterForm = () => {
       ) : (
         <div className={registerFormStyles.registerPage}>
           <div className={registerFormStyles.registerFormWrapper}>
+            <p
+              style={{
+                display: isUnknownerror ? "block" : "none",
+                color: "red",
+                marginBottom: "20px",
+                fontWeight: "bold",
+                fontSize: "18px",
+              }}
+            >
+              There was an unknown error. Please try again.
+            </p>
             <Form>
               <FieldWrapper
                 fieldName="course"
