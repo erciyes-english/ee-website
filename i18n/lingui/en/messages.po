@@ -267,8 +267,8 @@ msgid "registerForm.lname.placeholder"
 msgstr "Smith"
 
 #: src/components/forms/register/register-form.jsx:255
-msgid "registerForm.otherDiscount"
-msgstr "Are you part of something?"
+msgid "registerForm.studentDiscount"
+msgstr "Are you a returning student?"
 
 #: src/components/forms/register/register-form.jsx:162
 msgid "registerForm.phone.label"
@@ -323,8 +323,8 @@ msgid "registerForm.submit.oneDiscount"
 msgstr "100TL One time payment discount applied."
 
 #: src/components/forms/register/submission-zone.jsx:99
-msgid "registerForm.submit.otherDiscount"
-msgstr "100TL Other discount applied."
+msgid "registerForm.submit.studentDiscount"
+msgstr "100TL Returning student discount applied."
 
 #: src/components/forms/register/submission-zone.jsx:73
 msgid "registerForm.submit.price.label"

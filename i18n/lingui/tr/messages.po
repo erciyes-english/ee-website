@@ -267,8 +267,8 @@ msgid "registerForm.lname.placeholder"
 msgstr "Batur"
 
 #: src/components/forms/register/register-form.jsx:255
-msgid "registerForm.otherDiscount"
-msgstr "Bir şeyin parçası olarak mı kayıt oluyorsun?"
+msgid "registerForm.studentDiscount"
+msgstr "Mevcut öğrencilerimizden biri misiniz?"
 
 #: src/components/forms/register/register-form.jsx:162
 msgid "registerForm.phone.label"
@@ -323,8 +323,8 @@ msgid "registerForm.submit.oneDiscount"
 msgstr "100TL Peşin indirimi uygulanır."
 
 #: src/components/forms/register/submission-zone.jsx:99
-msgid "registerForm.submit.otherDiscount"
-msgstr "100TL Diğer indirim uygulandı"
+msgid "registerForm.submit.studentDiscount"
+msgstr "Mevcut öğrenci indirimi uygulandı"
 
 #: src/components/forms/register/submission-zone.jsx:73
 msgid "registerForm.submit.price.label"

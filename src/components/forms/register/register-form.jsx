@@ -32,7 +32,7 @@ const RegisterForm = () => {
         province: "",
         installments: "",
         groupDiscount: false,
-        otherDiscount: false,
+        studentDiscount: false,
         gdpr: false,
       }}
       validationSchema={localValidation}
@@ -251,10 +251,10 @@ const RegisterForm = () => {
                 type="checkbox"
               />
               <FieldWrapper
-                fieldName="otherDiscount"
+                fieldName="studentDiscount"
                 label={t({
-                  id: "registerForm.otherDiscount",
-                  message: "Are you part of something?",
+                  id: "registerForm.studentDiscount",
+                  message: "Are you a returning student?",
                 })}
                 type="checkbox"
               />

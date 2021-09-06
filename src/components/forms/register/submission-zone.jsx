@@ -29,7 +29,7 @@ const SubmissionZone = () => {
   };
   const [course, setCourse] = React.useState("");
   const [hasGroupDiscount, setHasGroupDiscount] = React.useState(false);
-  const [hasOtherDiscount, setHasOtherDiscount] = React.useState(false);
+  const [hasStudentDiscount, setHasStudentDiscount] = React.useState(false);
   const [installmentNum, setInstallmentNum] = React.useState(1);
 
   const [totalPrice, setTotalPrice] = React.useState(0);
@@ -50,11 +50,11 @@ const SubmissionZone = () => {
       setHasGroupDiscount(false);
     }
 
-    if (values.otherDiscount) {
-      setHasOtherDiscount(true);
+    if (values.studentDiscount) {
+      setHasStudentDiscount(true);
       total = total - 100;
     } else {
-      setHasOtherDiscount(false);
+      setHasStudentDiscount(false);
     }
 
     if (values.installments === "One Payment") {
@@ -94,9 +94,9 @@ const SubmissionZone = () => {
             </Trans>
           </li>
         ) : null}
-        {hasOtherDiscount ? (
+        {hasStudentDiscount ? (
           <li>
-            <Trans id="registerForm.submit.otherDiscount">
+            <Trans id="registerForm.submit.studentDiscount">
               100TL Returning student discount applied.
             </Trans>
           </li>
