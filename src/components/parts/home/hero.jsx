@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 import { LocalizedLink as Link } from "gatsby-theme-i18n";
 import LeadForm from "../../forms/lead/lead-form";
 
@@ -11,7 +11,10 @@ const Hero = () => (
       className={heroStyles.heroImageWrapper}
       layout="fullWidth"
       aspectRatio={16 / 9}
-      alt="Erciyes Mountain"
+      alt={t({
+        id: "hero.bgimage.alt",
+        message: "Erciyes Mountain in Kayseri, Turkey",
+      })}
       src={
         "https://images.unsplash.com/photo-1508901614289-62077b0a954d?w=2589"
       }

@@ -2,6 +2,7 @@ import * as React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as aboutStyles from "./about.module.css";
 import { StaticImage } from "gatsby-plugin-image";
+import { t } from "@lingui/macro";
 
 const About = ({ data }) => {
   return (
@@ -10,7 +11,10 @@ const About = ({ data }) => {
         <div className={aboutStyles.imageWrapper}>
           <StaticImage
             layout="fullWidth"
-            alt="Erciyes Mountain"
+            alt={t({
+              id: "about.image.alt",
+              message: "Hot air balloons flying over Cappadocia, Turkey",
+            })}
             src={
               "https://images.unsplash.com/photo-1604239282622-6cb682309b2d?w=668"
             }
@@ -23,7 +27,11 @@ const About = ({ data }) => {
           <div className={aboutStyles.aboutTeam}>
             <div className={aboutStyles.aboutTeamImage}>
               <StaticImage
-                alt="Austin and Heather Schauer"
+                alt={t({
+                  id: "about.schauer.alt",
+                  message:
+                    "Austin and Heath Schauer - English teachers in Kayseri",
+                })}
                 src="../../../images/austin-heather-english-teachers-kayseri-new.jpg"
                 placeholder="blurred"
                 formats={["auto", "webp", "avif"]}
@@ -32,7 +40,10 @@ const About = ({ data }) => {
             </div>
             <div className={aboutStyles.aboutTeamImage}>
               <StaticImage
-                alt="Lizzy Vick"
+                alt={t({
+                  id: "about.lizzy.alt",
+                  message: "Lizzy Vick - English teacher in Kayseri",
+                })}
                 src="../../../images/square-lizzy-english-teachers-kayseri.jpg"
                 placeholder="blurred"
                 formats={["auto", "webp", "avif"]}
@@ -41,7 +52,11 @@ const About = ({ data }) => {
             </div>
             <div className={aboutStyles.aboutTeamImage}>
               <StaticImage
-                alt="Clay and Charlotte Harmon"
+                alt={t({
+                  id: "about.harmon.alt",
+                  message:
+                    "Clay and Charlotte Harmon - English teachers in Kayseri",
+                })}
                 src="../../../images/square-charlotte-clay-english-teachers-kayseri.jpg"
                 placeholder="blurred"
                 formats={["auto", "webp", "avif"]}

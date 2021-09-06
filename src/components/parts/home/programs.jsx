@@ -2,7 +2,7 @@ import * as React from "react";
 import Program from "./program";
 import * as programsStyles from "./programs.module.css";
 import { StaticImage } from "gatsby-plugin-image";
-import { Trans } from "@lingui/macro";
+import { t, Trans } from "@lingui/macro";
 
 const Programs = ({ data }) => {
   return (
@@ -10,7 +10,10 @@ const Programs = ({ data }) => {
       <StaticImage
         className={programsStyles.imageWrapper}
         layout="fullWidth"
-        alt="Erciyes Mountain"
+        alt={t({
+          id: "programs.bgimage.alt",
+          message: "Colorful hot air balloons at dawn in Cappadocia, Turkey",
+        })}
         src={
           "https://images.unsplash.com/photo-1566682372561-2273e5226306?w=2000"
         }
