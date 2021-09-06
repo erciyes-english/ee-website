@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Erciyes English",
-    siteUrl: "https://erciyes-english.github.io/ee-website/",
+    siteUrl: "https://dev.erciyesenglish.com",
     author: "Erciyes English",
   },
   plugins: [
@@ -74,6 +74,27 @@ module.exports = {
       options: {
         name: `parts`,
         path: `${__dirname}/src/parts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-multi-language-sitemap`,
+      options: {
+        output: "/",
+        query: `
+          query {
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+          }
+        `,
+        langs: ["en", "tr"],
       },
     },
   ],
