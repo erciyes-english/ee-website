@@ -8,9 +8,9 @@ const SubmissionZone = () => {
 
   const courses = {
     "": 0,
-    "Phase 1 - Fall Semester": 3000,
-    "Phase 2 - Fall Semester": 3000,
-    "Phase 3 - Fall Semester": 3000,
+    "Phase 1 - Fall Semester": 3500,
+    "Phase 2 - Fall Semester": 3500,
+    "Phase 3 - Fall Semester": 3500,
   };
   const coursesI18n = {
     "": "",
@@ -40,8 +40,14 @@ const SubmissionZone = () => {
   });
   React.useEffect(() => {
     let total = 0;
-    setCourse(values.course);
-    total = courses[values.course];
+
+    if (values.course) {
+      setCourse(values.course);
+      total = courses[values.course];
+
+      // early registration discount.
+      total = total - 200;
+    }
 
     if (values.groupDiscount) {
       setHasGroupDiscount(true);
@@ -77,15 +83,17 @@ const SubmissionZone = () => {
         </span>
       </p>
       <ul>
-        <li>
-          <Trans id="registerForm.submit.earlyDiscount">
-            200TL Early Registration discount applied.
-          </Trans>
-        </li>
         {course ? (
-          <li>{`${coursesI18n[course]} - ${currency.format(
-            courses[course]
-          )}`}</li>
+          <>
+            <li>{`${coursesI18n[course]} - ${currency.format(
+              courses[course]
+            )}`}</li>
+            <li>
+              <Trans id="registerForm.submit.earlyDiscount">
+                200TL Early Registration discount applied.
+              </Trans>
+            </li>
+          </>
         ) : null}
         {hasGroupDiscount ? (
           <li>
@@ -104,7 +112,7 @@ const SubmissionZone = () => {
         {installmentNum === 1 ? (
           <li>
             <Trans id="registerForm.submit.oneDiscount">
-              100TL One time payment discount applied.
+              200TL One time payment discount applied.
             </Trans>
           </li>
         ) : null}

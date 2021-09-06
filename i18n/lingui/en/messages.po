@@ -286,11 +286,11 @@ msgstr "Kayseri"
 msgid "registerForm.studentDiscount"
 msgstr "Are you a returning student?"
 
-#: src/components/forms/register/submission-zone.jsx:118
+#: src/components/forms/register/submission-zone.jsx:126
 msgid "registerForm.submit.button"
 msgstr "Register Now"
 
-#: src/components/forms/register/submission-zone.jsx:114
+#: src/components/forms/register/submission-zone.jsx:122
 msgid "registerForm.submit.buttonSending"
 msgstr "Submitting..."
 
@@ -310,23 +310,23 @@ msgstr "Phase 3 - Fall Semester"
 #~ msgid "registerForm.submit.course4"
 #~ msgstr "Connect Program"
 
-#: src/components/forms/register/submission-zone.jsx:81
+#: src/components/forms/register/submission-zone.jsx:92
 msgid "registerForm.submit.earlyDiscount"
 msgstr "200TL Early Registration discount applied."
 
-#: src/components/forms/register/submission-zone.jsx:92
+#: src/components/forms/register/submission-zone.jsx:100
 msgid "registerForm.submit.groupDiscount"
 msgstr "100TL Group discount applied."
 
-#: src/components/forms/register/submission-zone.jsx:106
+#: src/components/forms/register/submission-zone.jsx:114
 msgid "registerForm.submit.oneDiscount"
-msgstr "100TL One time payment discount applied."
+msgstr "200TL One time payment discount applied."
 
-#: src/components/forms/register/submission-zone.jsx:73
+#: src/components/forms/register/submission-zone.jsx:79
 msgid "registerForm.submit.price.label"
 msgstr "Total:"
 
-#: src/components/forms/register/submission-zone.jsx:99
+#: src/components/forms/register/submission-zone.jsx:107
 msgid "registerForm.submit.studentDiscount"
 msgstr "100TL Returning student discount applied."
 
