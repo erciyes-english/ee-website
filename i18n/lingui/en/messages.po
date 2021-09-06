@@ -266,10 +266,6 @@ msgstr "Last Name*"
 msgid "registerForm.lname.placeholder"
 msgstr "Smith"
 
-#: src/components/forms/register/register-form.jsx:255
-msgid "registerForm.studentDiscount"
-msgstr "Are you a returning student?"
-
 #: src/components/forms/register/register-form.jsx:162
 msgid "registerForm.phone.label"
 msgstr "Phone*"
@@ -285,6 +281,10 @@ msgstr "Province*"
 #: src/components/forms/register/register-form.jsx:212
 msgid "registerForm.province.placeholder"
 msgstr "Kayseri"
+
+#: src/components/forms/register/register-form.jsx:255
+msgid "registerForm.studentDiscount"
+msgstr "Are you a returning student?"
 
 #: src/components/forms/register/submission-zone.jsx:118
 msgid "registerForm.submit.button"
@@ -322,13 +322,13 @@ msgstr "100TL Group discount applied."
 msgid "registerForm.submit.oneDiscount"
 msgstr "100TL One time payment discount applied."
 
-#: src/components/forms/register/submission-zone.jsx:99
-msgid "registerForm.submit.studentDiscount"
-msgstr "100TL Returning student discount applied."
-
 #: src/components/forms/register/submission-zone.jsx:73
 msgid "registerForm.submit.price.label"
 msgstr "Total:"
+
+#: src/components/forms/register/submission-zone.jsx:99
+msgid "registerForm.submit.studentDiscount"
+msgstr "100TL Returning student discount applied."
 
 #: src/components/forms/register/register-form.jsx:68
 msgid "registerForm.thankyou.headline"

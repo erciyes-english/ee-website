@@ -266,10 +266,6 @@ msgstr "Soyadın"
 msgid "registerForm.lname.placeholder"
 msgstr "Batur"
 
-#: src/components/forms/register/register-form.jsx:255
-msgid "registerForm.studentDiscount"
-msgstr "Mevcut öğrencilerimizden biri misiniz?"
-
 #: src/components/forms/register/register-form.jsx:162
 msgid "registerForm.phone.label"
 msgstr "Telefon"
@@ -285,6 +281,10 @@ msgstr "Şehir"
 #: src/components/forms/register/register-form.jsx:212
 msgid "registerForm.province.placeholder"
 msgstr "Kayseri"
+
+#: src/components/forms/register/register-form.jsx:255
+msgid "registerForm.studentDiscount"
+msgstr "Mevcut öğrencilerimizden biri misiniz?"
 
 #: src/components/forms/register/submission-zone.jsx:118
 msgid "registerForm.submit.button"
@@ -322,13 +322,13 @@ msgstr "100TL Grup indirimi uygulandı"
 msgid "registerForm.submit.oneDiscount"
 msgstr "100TL Peşin indirimi uygulanır."
 
-#: src/components/forms/register/submission-zone.jsx:99
-msgid "registerForm.submit.studentDiscount"
-msgstr "Mevcut öğrenci indirimi uygulandı"
-
 #: src/components/forms/register/submission-zone.jsx:73
 msgid "registerForm.submit.price.label"
 msgstr "Toplam:"
+
+#: src/components/forms/register/submission-zone.jsx:99
+msgid "registerForm.submit.studentDiscount"
+msgstr "Mevcut öğrenci indirimi uygulandı"
 
 #: src/components/forms/register/register-form.jsx:68
 msgid "registerForm.thankyou.headline"
