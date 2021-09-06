@@ -120,12 +120,6 @@ const RegisterForm = () => {
                     message: "Phase 3 - Fall Semester",
                   })}
                 </option>
-                <option value="Connect Program">
-                  {t({
-                    id: "registerForm.course.option4",
-                    message: "Connect Program",
-                  })}
-                </option>
               </FieldWrapper>
               <div className={registerFormStyles.inputTwoCol}>
                 <FieldWrapper

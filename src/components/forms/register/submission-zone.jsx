@@ -11,7 +11,6 @@ const SubmissionZone = () => {
     "Phase 1 - Fall Semester": 3000,
     "Phase 2 - Fall Semester": 3000,
     "Phase 3 - Fall Semester": 3000,
-    "Connect Program": 4000,
   };
   const coursesI18n = {
     "": "",
@@ -26,10 +25,6 @@ const SubmissionZone = () => {
     "Phase 3 - Fall Semester": t({
       id: "registerForm.submit.course3",
       message: "Phase 3 - Fall Semester",
-    }),
-    "Connect Program": t({
-      id: "registerForm.submit.course4",
-      message: "Connect Program",
     }),
   };
   const [course, setCourse] = React.useState("");
@@ -50,20 +45,20 @@ const SubmissionZone = () => {
 
     if (values.groupDiscount) {
       setHasGroupDiscount(true);
-      total = total - total * 0.1;
+      total = total - 100;
     } else {
       setHasGroupDiscount(false);
     }
 
     if (values.otherDiscount) {
       setHasOtherDiscount(true);
-      total = total - total * 0.1;
+      total = total - 100;
     } else {
       setHasOtherDiscount(false);
     }
 
     if (values.installments === "One Payment") {
-      total = total - 100;
+      total = total - 200;
       setInstallmentNum(1);
     } else {
       setInstallmentNum(2);
@@ -82,6 +77,11 @@ const SubmissionZone = () => {
         </span>
       </p>
       <ul>
+        <li>
+          <Trans id="registerForm.submit.earlyDiscount">
+            200TL Early Registration discount applied.
+          </Trans>
+        </li>
         {course ? (
           <li>{`${coursesI18n[course]} - ${currency.format(
             courses[course]
@@ -90,14 +90,14 @@ const SubmissionZone = () => {
         {hasGroupDiscount ? (
           <li>
             <Trans id="registerForm.submit.groupDiscount">
-              10% Group discount applied.
+              100TL Group discount applied.
             </Trans>
           </li>
         ) : null}
         {hasOtherDiscount ? (
           <li>
             <Trans id="registerForm.submit.otherDiscount">
-              10% Other discount applied.
+              100TL Returning student discount applied.
             </Trans>
           </li>
         ) : null}
