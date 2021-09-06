@@ -5,5 +5,6 @@
 ## Tech Stack
 
 - Gatsby
-- (Forms?)
-- GitHub Pages
+- Cloudflare Workers (form processing)
+- Cloudflare Pages
+- Cloudflare CDN
