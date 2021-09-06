@@ -13,6 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/parts/home/about.jsx:55
+msgid "about.harmon.alt"
+msgstr "Clay ve Charlotte Harmon - Kayseri'de İngilizce öğretmenleri"
+
+#: src/components/parts/home/about.jsx:14
+msgid "about.image.alt"
+msgstr "Kapadokya, Türkiye üzerinde uçan sıcak hava balonları"
+
+#: src/components/parts/home/about.jsx:43
+msgid "about.lizzy.alt"
+msgstr "Lizzy Vick - Kayseri'de ingilizce öğretmeni"
+
+#: src/components/parts/home/about.jsx:30
+msgid "about.schauer.alt"
+msgstr "Austin ve Heather Schauer - Kayseri'de İngilizce öğretmenleri"
+
 #: src/components/footer.jsx:61
 msgid "footer.form-desc"
 msgstr "Bu formu doldur! Ofisimizden birisi seninle iletişime geçecektir!"
@@ -25,23 +41,27 @@ msgstr "Daha Fazla <0>Soruların mı Var?</0>"
 msgid "footer.headline"
 msgstr "Bağlantıda <0>Ol</0>"
 
-#: src/components/parts/home/hero.jsx:36
+#: src/components/parts/home/hero.jsx:14
+msgid "hero.bgimage.alt"
+msgstr "Erciyes Dağı Kayseri, Türkiye"
+
+#: src/components/parts/home/hero.jsx:39
 msgid "hero.btn1"
 msgstr "Programlar"
 
-#: src/components/parts/home/hero.jsx:39
+#: src/components/parts/home/hero.jsx:42
 msgid "hero.btn2"
 msgstr "Kaydol"
 
-#: src/components/parts/home/hero.jsx:45
+#: src/components/parts/home/hero.jsx:48
 msgid "hero.form-title"
 msgstr "İngilizce Serüvenine <0>Bugün Başla!</0>"
 
-#: src/components/parts/home/hero.jsx:25
+#: src/components/parts/home/hero.jsx:28
 msgid "hero.line1"
 msgstr "Konuşmayı <0>paylaşan,</0>"
 
-#: src/components/parts/home/hero.jsx:30
+#: src/components/parts/home/hero.jsx:33
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
@@ -142,7 +162,11 @@ msgstr "Programlar"
 msgid "menu.register"
 msgstr "Kaydol"
 
-#: src/components/parts/home/programs.jsx:22
+#: src/components/parts/home/programs.jsx:13
+msgid "programs.bgimage.alt"
+msgstr "Kapadokya, Türkiye'de şafakta renkli sıcak hava balonları"
+
+#: src/components/parts/home/programs.jsx:25
 msgid "programs.headline"
 msgstr "İngilizce <0>Programlarımız</0>"
 
@@ -175,7 +199,6 @@ msgid "registerForm.course.label"
 msgstr "Hangi kursa kayıt oluyorsunuz?*"
 
 #: src/components/forms/register/register-form.jsx:100
-#: src/pages/index.jsx:11
 msgid "registerForm.course.option0"
 msgstr "Kursunuzu seçin..."
 
@@ -311,18 +334,18 @@ msgstr "Gönderildi!"
 msgid "registerForm.thankyou.text"
 msgstr "Kayıt olduğunuz için teşekkürler!"
 
-#: src/pages/index.jsx:28
+#: src/pages/index.jsx:22
 msgid "seo.home.description"
 msgstr "Erciyes English ana dili İngilizce olan bir İngilizce kursudur ve geleceğinizin kapılarını aralayacaktır. Türkiye Kayseri'deyiz."
 
-#: src/pages/index.jsx:24
+#: src/pages/index.jsx:18
 msgid "seo.home.title"
 msgstr "Kayseri'de İngilizce Kursu"
 
-#: src/pages/register.jsx:16
+#: src/pages/register.jsx:17
 msgid "seo.register.description"
 msgstr "İngilizce akıcılığınızı geliştirmek için bugün İngilizce kurslarımıza kaydolun. Türkiye Kayseri'deyiz."
 
-#: src/pages/register.jsx:12
+#: src/pages/register.jsx:13
 msgid "seo.register.title"
 msgstr "İngilizce yolculuğunuza bugün başlayın"

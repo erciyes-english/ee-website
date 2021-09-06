@@ -60,6 +60,7 @@ export const query = graphql`
           title
           buttonText
           buttonHref
+          imageAlt
           remoteImageUrl {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED, aspectRatio: 1.7778)

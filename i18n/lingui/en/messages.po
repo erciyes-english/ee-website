@@ -13,6 +13,22 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/parts/home/about.jsx:55
+msgid "about.harmon.alt"
+msgstr "Clay and Charlotte Harmon - English teachers in Kayseri"
+
+#: src/components/parts/home/about.jsx:14
+msgid "about.image.alt"
+msgstr "Hot air balloons flying over Cappadocia, Turkey"
+
+#: src/components/parts/home/about.jsx:43
+msgid "about.lizzy.alt"
+msgstr "Lizzy Vick - English teacher in Kayseri"
+
+#: src/components/parts/home/about.jsx:30
+msgid "about.schauer.alt"
+msgstr "Austin and Heath Schauer - English teachers in Kayseri"
+
 #: src/components/footer.jsx:61
 msgid "footer.form-desc"
 msgstr "Fill out this form and someone from our office will contact you!"
@@ -25,23 +41,27 @@ msgstr "More <0>Questions?</0>"
 msgid "footer.headline"
 msgstr "Get <0>In Touch</0>"
 
-#: src/components/parts/home/hero.jsx:36
+#: src/components/parts/home/hero.jsx:14
+msgid "hero.bgimage.alt"
+msgstr "Erciyes Mountain in Kayseri, Turkey"
+
+#: src/components/parts/home/hero.jsx:39
 msgid "hero.btn1"
 msgstr "Programs"
 
-#: src/components/parts/home/hero.jsx:39
+#: src/components/parts/home/hero.jsx:42
 msgid "hero.btn2"
 msgstr "Register"
 
-#: src/components/parts/home/hero.jsx:45
+#: src/components/parts/home/hero.jsx:48
 msgid "hero.form-title"
 msgstr "begin your english <0>journey today!</0>"
 
-#: src/components/parts/home/hero.jsx:25
+#: src/components/parts/home/hero.jsx:28
 msgid "hero.line1"
 msgstr "sharing <0>life.</0>"
 
-#: src/components/parts/home/hero.jsx:30
+#: src/components/parts/home/hero.jsx:33
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
 
@@ -142,7 +162,11 @@ msgstr "Programs"
 msgid "menu.register"
 msgstr "Register"
 
-#: src/components/parts/home/programs.jsx:22
+#: src/components/parts/home/programs.jsx:13
+msgid "programs.bgimage.alt"
+msgstr "Colorful hot air balloons at dawn in Cappadocia, Turkey"
+
+#: src/components/parts/home/programs.jsx:25
 msgid "programs.headline"
 msgstr "Our <0>English Programs</0>"
 
@@ -175,7 +199,6 @@ msgid "registerForm.course.label"
 msgstr "Which course are you registering for?*"
 
 #: src/components/forms/register/register-form.jsx:100
-#: src/pages/index.jsx:11
 msgid "registerForm.course.option0"
 msgstr "Select your course..."
 
@@ -311,18 +334,18 @@ msgstr "Sent!"
 msgid "registerForm.thankyou.text"
 msgstr "Thank you for registering!"
 
-#: src/pages/index.jsx:28
+#: src/pages/index.jsx:22
 msgid "seo.home.description"
 msgstr "English is a language center that exists to open the doors of your future through English fluency. We're located in Kayseri, Turkey"
 
-#: src/pages/index.jsx:24
+#: src/pages/index.jsx:18
 msgid "seo.home.title"
 msgstr "English learning in Kayseri, Turkey"
 
-#: src/pages/register.jsx:16
+#: src/pages/register.jsx:17
 msgid "seo.register.description"
 msgstr "Register for our English courses today to improve your English fluency. We're located in Kayseri, Turkey."
 
-#: src/pages/register.jsx:12
+#: src/pages/register.jsx:13
 msgid "seo.register.title"
 msgstr "Begin your english journey today"

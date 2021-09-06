@@ -10,7 +10,7 @@ const Program = ({ data }) => {
     <div className={programStyles.program}>
       <div className={programStyles.programContentWrapper}>
         <div className="program-image">
-          <GatsbyImage image={image} alt="" />
+          <GatsbyImage image={image} alt={data.frontmatter.imageAlt} />
         </div>
         <div className={programStyles.programContent}>
           <MDXRenderer>{data.body}</MDXRenderer>
