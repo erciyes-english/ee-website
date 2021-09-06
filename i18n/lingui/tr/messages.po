@@ -45,55 +45,55 @@ msgstr "Konuşmayı <0>paylaşan,</0>"
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
-#: src/components/forms/lead/lead-form.jsx:71
+#: src/components/forms/lead/lead-form.jsx:99
 msgid "leadForm.email"
 msgstr "E-mail"
 
-#: src/components/forms/lead/lead-form.jsx:56
+#: src/components/forms/lead/lead-form.jsx:84
 msgid "leadForm.fname"
 msgstr "Adın"
 
-#: src/components/forms/lead/lead-form.jsx:123
+#: src/components/forms/lead/lead-form.jsx:151
 msgid "leadForm.gdpr"
 msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
 
-#: src/components/forms/lead/lead-form.jsx:90
+#: src/components/forms/lead/lead-form.jsx:118
 msgid "leadForm.interest"
 msgstr "Neye ilgin var?"
 
-#: src/components/forms/lead/lead-form.jsx:93
+#: src/components/forms/lead/lead-form.jsx:121
 msgid "leadForm.interest.option1"
 msgstr "Aşama 1"
 
-#: src/components/forms/lead/lead-form.jsx:96
+#: src/components/forms/lead/lead-form.jsx:124
 msgid "leadForm.interest.option2"
 msgstr "Aşama 2"
 
-#: src/components/forms/lead/lead-form.jsx:99
+#: src/components/forms/lead/lead-form.jsx:127
 msgid "leadForm.interest.option3"
 msgstr "Aşama 3"
 
-#: src/components/forms/lead/lead-form.jsx:102
+#: src/components/forms/lead/lead-form.jsx:130
 msgid "leadForm.interest.option4"
 msgstr "Bağlantı Programı"
 
-#: src/components/forms/lead/lead-form.jsx:108
+#: src/components/forms/lead/lead-form.jsx:136
 msgid "leadForm.interest.option5"
 msgstr "Sohbet Kulubü"
 
-#: src/components/forms/lead/lead-form.jsx:114
+#: src/components/forms/lead/lead-form.jsx:142
 msgid "leadForm.interest.option6"
 msgstr "Bire Bir Dersler"
 
-#: src/components/forms/lead/lead-form.jsx:117
+#: src/components/forms/lead/lead-form.jsx:145
 msgid "leadForm.interest.option7"
 msgstr "Diğerleri"
 
-#: src/components/forms/lead/lead-form.jsx:63
+#: src/components/forms/lead/lead-form.jsx:91
 msgid "leadForm.lname"
 msgstr "Soyadın"
 
-#: src/components/forms/lead/lead-form.jsx:78
+#: src/components/forms/lead/lead-form.jsx:106
 msgid "leadForm.phone"
 msgstr "Telefon"
 
@@ -105,26 +105,26 @@ msgstr "Gönder"
 msgid "leadForm.submit-btn-sending"
 msgstr "Gönderiliyor"
 
-#: src/components/forms/lead/lead-form.jsx:44
+#: src/components/forms/lead/lead-form.jsx:60
 msgid "leadForm.thankyou.headline"
 msgstr "Gönderildi"
 
-#: src/components/forms/lead/lead-form.jsx:47
+#: src/components/forms/lead/lead-form.jsx:63
 msgid "leadForm.thankyou.text"
 msgstr "Yakında cevaplayacağız!"
 
 #: src/components/header.jsx:51
-#: src/components/mobile-nav.jsx:41
+#: src/components/mobile-nav.jsx:48
 msgid "menu.about"
 msgstr "Bilgi"
 
 #: src/components/header.jsx:61
-#: src/components/mobile-nav.jsx:51
+#: src/components/mobile-nav.jsx:58
 msgid "menu.contact"
 msgstr "İletişim"
 
 #: src/components/header.jsx:46
-#: src/components/mobile-nav.jsx:36
+#: src/components/mobile-nav.jsx:43
 msgid "menu.home"
 msgstr "Anasayfa"
 
@@ -133,132 +133,133 @@ msgid "menu.language-switcher"
 msgstr "Change to English"
 
 #: src/components/header.jsx:56
-#: src/components/mobile-nav.jsx:46
+#: src/components/mobile-nav.jsx:53
 msgid "menu.programs"
 msgstr "Programlar"
 
 #: src/components/header.jsx:66
-#: src/components/mobile-nav.jsx:56
+#: src/components/mobile-nav.jsx:63
 msgid "menu.register"
 msgstr "Kaydol"
 
-#: src/components/parts/home/programs.jsx:23
+#: src/components/parts/home/programs.jsx:22
 msgid "programs.headline"
 msgstr "İngilizce <0>Programlarımız</0>"
 
-#: src/components/forms/register/register-form.jsx:146
+#: src/components/forms/register/register-form.jsx:180
 msgid "registerForm.address1.label"
 msgstr "Adres satırı 1*"
 
-#: src/components/forms/register/register-form.jsx:150
+#: src/components/forms/register/register-form.jsx:184
 msgid "registerForm.address1.placeholder"
 msgstr "Açık adres, şirket adı, c/o"
 
-#: src/components/forms/register/register-form.jsx:157
+#: src/components/forms/register/register-form.jsx:191
 msgid "registerForm.address2.label"
 msgstr "dres satırı 2"
 
-#: src/components/forms/register/register-form.jsx:161
+#: src/components/forms/register/register-form.jsx:195
 msgid "registerForm.address2.placeholder"
 msgstr "Apartman, daire, ünite, bina, kat vb."
 
-#: src/components/forms/register/register-form.jsx:169
+#: src/components/forms/register/register-form.jsx:203
 msgid "registerForm.city.label"
 msgstr "İlçe"
 
-#: src/components/forms/register/register-form.jsx:173
+#: src/components/forms/register/register-form.jsx:207
 msgid "registerForm.city.placeholder"
 msgstr "Talas"
 
-#: src/components/forms/register/register-form.jsx:59
+#: src/components/forms/register/register-form.jsx:93
 msgid "registerForm.course.label"
 msgstr "Hangi kursa kayıt oluyorsunuz?*"
 
-#: src/components/forms/register/register-form.jsx:66
+#: src/components/forms/register/register-form.jsx:100
+#: src/pages/index.jsx:11
 msgid "registerForm.course.option0"
 msgstr "Kursunuzu seçin..."
 
-#: src/components/forms/register/register-form.jsx:72
+#: src/components/forms/register/register-form.jsx:106
 msgid "registerForm.course.option1"
 msgstr "Aşama 1 - Sonbahar Dönemi"
 
-#: src/components/forms/register/register-form.jsx:78
+#: src/components/forms/register/register-form.jsx:112
 msgid "registerForm.course.option2"
 msgstr "Aşama 2 - Sonbahar Dönemi"
 
-#: src/components/forms/register/register-form.jsx:84
+#: src/components/forms/register/register-form.jsx:118
 msgid "registerForm.course.option3"
 msgstr "Aşama 3 - Sonbahar Dönemi"
 
-#: src/components/forms/register/register-form.jsx:90
+#: src/components/forms/register/register-form.jsx:124
 msgid "registerForm.course.option4"
 msgstr "Bağlantı Programı"
 
-#: src/components/forms/register/register-form.jsx:123
+#: src/components/forms/register/register-form.jsx:157
 msgid "registerForm.email.label"
 msgstr "E-mail*"
 
-#: src/components/forms/register/register-form.jsx:127
+#: src/components/forms/register/register-form.jsx:161
 msgid "registerForm.email.placeholder"
 msgstr "nese@example.com"
 
-#: src/components/forms/register/register-form.jsx:99
+#: src/components/forms/register/register-form.jsx:133
 msgid "registerForm.fname.label"
 msgstr "Adın"
 
-#: src/components/forms/register/register-form.jsx:103
+#: src/components/forms/register/register-form.jsx:137
 msgid "registerForm.fname.placeholder"
 msgstr "Ahmet"
 
-#: src/components/forms/register/register-form.jsx:236
+#: src/components/forms/register/register-form.jsx:269
 msgid "registerForm.gdpr"
 msgstr "Bu web sitesinin gönderilen bilgilerimi depolamasına izin veriyorum, böylece soruma yanıt verebilsinler"
 
-#: src/components/forms/register/register-form.jsx:220
+#: src/components/forms/register/register-form.jsx:253
 msgid "registerForm.groupDiscount"
 msgstr "Bir grubun parçası olarak mı kayıt oluyorsun?"
 
-#: src/components/forms/register/register-form.jsx:193
+#: src/components/forms/register/register-form.jsx:226
 msgid "registerForm.installments.label"
 msgstr "Taksit Seçenekleri"
 
-#: src/components/forms/register/register-form.jsx:200
+#: src/components/forms/register/register-form.jsx:233
 msgid "registerForm.installments.option0"
 msgstr "Lütfen seç..."
 
-#: src/components/forms/register/register-form.jsx:206
+#: src/components/forms/register/register-form.jsx:239
 msgid "registerForm.installments.option1"
 msgstr "Peşin"
 
-#: src/components/forms/register/register-form.jsx:212
+#: src/components/forms/register/register-form.jsx:245
 msgid "registerForm.installments.option2"
 msgstr "İki Taksit"
 
-#: src/components/forms/register/register-form.jsx:110
+#: src/components/forms/register/register-form.jsx:144
 msgid "registerForm.lname.label"
 msgstr "Soyadın"
 
-#: src/components/forms/register/register-form.jsx:114
+#: src/components/forms/register/register-form.jsx:148
 msgid "registerForm.lname.placeholder"
 msgstr "Batur"
 
-#: src/components/forms/register/register-form.jsx:228
+#: src/components/forms/register/register-form.jsx:261
 msgid "registerForm.otherDiscount"
 msgstr "Bir şeyin parçası olarak mı kayıt oluyorsun?"
 
-#: src/components/forms/register/register-form.jsx:134
+#: src/components/forms/register/register-form.jsx:168
 msgid "registerForm.phone.label"
 msgstr "Telefon"
 
-#: src/components/forms/register/register-form.jsx:138
+#: src/components/forms/register/register-form.jsx:172
 msgid "registerForm.phone.placeholder"
 msgstr "0 538 007 11 22"
 
-#: src/components/forms/register/register-form.jsx:180
+#: src/components/forms/register/register-form.jsx:214
 msgid "registerForm.province.label"
 msgstr "Şehir"
 
-#: src/components/forms/register/register-form.jsx:184
+#: src/components/forms/register/register-form.jsx:218
 msgid "registerForm.province.placeholder"
 msgstr "Kayseri"
 
@@ -302,10 +303,26 @@ msgstr "%10 Diğer indirim uygulandı"
 msgid "registerForm.submit.price.label"
 msgstr "Toplam:"
 
-#: src/components/forms/register/register-form.jsx:45
+#: src/components/forms/register/register-form.jsx:68
 msgid "registerForm.thankyou.headline"
 msgstr "Gönderildi!"
 
-#: src/components/forms/register/register-form.jsx:48
+#: src/components/forms/register/register-form.jsx:71
 msgid "registerForm.thankyou.text"
 msgstr "Kayıt olduğunuz için teşekkürler!"
+
+#: src/pages/index.jsx:28
+msgid "seo.home.description"
+msgstr "Erciyes English ana dili İngilizce olan bir İngilizce kursudur ve geleceğinizin kapılarını aralayacaktır. Türkiye Kayseri'deyiz."
+
+#: src/pages/index.jsx:24
+msgid "seo.home.title"
+msgstr "Kayseri'de İngilizce Kursu"
+
+#: src/pages/register.jsx:16
+msgid "seo.register.description"
+msgstr "İngilizce akıcılığınızı geliştirmek için bugün İngilizce kurslarımıza kaydolun. Türkiye Kayseri'deyiz."
+
+#: src/pages/register.jsx:12
+msgid "seo.register.title"
+msgstr "İngilizce yolculuğunuza bugün başlayın"
