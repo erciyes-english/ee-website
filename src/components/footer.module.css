@@ -1,18 +1,5 @@
 .footer-content-wrapper {
-  grid-area: 1/1;
-  position: relative;
-  place-items: center;
-  display: grid;
   background-color: var(--main-accent-color);
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: 65% 35%;
-  width: 100%;
-  max-width: 1100px;
-  align-items: center;
-  padding: 30px 0;
 }
 
 .footer-content-right {

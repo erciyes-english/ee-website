@@ -1,24 +1,14 @@
-.about-content-wrapper {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 100%;
-  max-width: 1100px;
-  align-items: center;
-  margin: 0 auto;
-  padding: 30px 0px;
-}
-
 .about-content {
   margin: 20px;
 }
 
-.about-content-wrapper h2 {
+.about-content h2 {
   font-size: 32px;
   font-weight: 100;
   margin-bottom: 10px;
 }
 
-.about-content-wrapper p {
+.about-content p {
   font-size: 17px;
   line-height: 1.5;
 }
@@ -61,7 +51,7 @@
     width: 95%;
   }
 
-  .about-content-wrapper h2 {
+  .about-content h2 {
     font-size: 28px;
   }
 }
