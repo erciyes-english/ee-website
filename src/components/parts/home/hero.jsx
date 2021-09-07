@@ -15,9 +15,8 @@ const Hero = () => (
         id: "hero.bgimage.alt",
         message: "Erciyes Mountain in Kayseri, Turkey",
       })}
-      src={
-        "https://images.unsplash.com/photo-1508901614289-62077b0a954d?w=2589"
-      }
+      quality="80"
+      src={"../../../images/erciyes-mountain.jpg"}
       placeholder="blurred"
       formats={["auto", "webp", "avif"]}
     />
