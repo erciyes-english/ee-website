@@ -41,7 +41,7 @@ const RegisterForm = () => {
         const url = "https://forms.erciyesenglish.workers.dev/forms/register";
         fetch(url, {
           method: "POST",
-          body: JSON.stringify(values),
+          body: JSON.stringify({ ...values, lang: locale }),
         })
           .then((response) => {
             if (response.status !== 200) {
