@@ -1,3 +1,7 @@
+:root {
+  --main-accent-color: #c0272d;
+}
+
 html,
 input,
 button {

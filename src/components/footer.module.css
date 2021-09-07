@@ -3,7 +3,7 @@
   position: relative;
   place-items: center;
   display: grid;
-  background-color: #c0272d;
+  background-color: var(--main-accent-color);
 }
 
 .footer-content {
