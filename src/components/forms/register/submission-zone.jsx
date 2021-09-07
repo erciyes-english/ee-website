@@ -47,6 +47,8 @@ const SubmissionZone = () => {
 
       // early registration discount.
       total = total - 200;
+    } else {
+      setCourse("");
     }
 
     if (values.groupDiscount) {
@@ -79,7 +81,12 @@ const SubmissionZone = () => {
           <Trans id="registerForm.submit.price.label">Total:</Trans>
         </span>
         <span className={submissionStyles.price}>
-          {currency.format(totalPrice)}
+          {totalPrice > 0 ? (
+            <del className={submissionStyles.fullPrice}>
+              {currency.format(courses[course])}
+            </del>
+          ) : null}
+          <span>{currency.format(totalPrice)}</span>
         </span>
       </p>
       <ul>
