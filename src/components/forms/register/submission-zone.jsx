@@ -8,10 +8,9 @@ const SubmissionZone = () => {
 
   const courses = {
     "": 0,
-    "Phase 1 - Fall Semester": 3000,
-    "Phase 2 - Fall Semester": 3000,
-    "Phase 3 - Fall Semester": 3000,
-    "Connect Program": 4000,
+    "Phase 1 - Fall Semester": 3500,
+    "Phase 2 - Fall Semester": 3500,
+    "Phase 3 - Fall Semester": 3500,
   };
   const coursesI18n = {
     "": "",
@@ -27,14 +26,10 @@ const SubmissionZone = () => {
       id: "registerForm.submit.course3",
       message: "Phase 3 - Fall Semester",
     }),
-    "Connect Program": t({
-      id: "registerForm.submit.course4",
-      message: "Connect Program",
-    }),
   };
   const [course, setCourse] = React.useState("");
   const [hasGroupDiscount, setHasGroupDiscount] = React.useState(false);
-  const [hasOtherDiscount, setHasOtherDiscount] = React.useState(false);
+  const [hasStudentDiscount, setHasStudentDiscount] = React.useState(false);
   const [installmentNum, setInstallmentNum] = React.useState(1);
 
   const [totalPrice, setTotalPrice] = React.useState(0);
@@ -45,25 +40,33 @@ const SubmissionZone = () => {
   });
   React.useEffect(() => {
     let total = 0;
-    setCourse(values.course);
-    total = courses[values.course];
+
+    if (values.course) {
+      setCourse(values.course);
+      total = courses[values.course];
+
+      // early registration discount.
+      total = total - 200;
+    } else {
+      setCourse("");
+    }
 
     if (values.groupDiscount) {
       setHasGroupDiscount(true);
-      total = total - total * 0.1;
+      total = total - 100;
     } else {
       setHasGroupDiscount(false);
     }
 
-    if (values.otherDiscount) {
-      setHasOtherDiscount(true);
-      total = total - total * 0.1;
+    if (values.studentDiscount) {
+      setHasStudentDiscount(true);
+      total = total - 100;
     } else {
-      setHasOtherDiscount(false);
+      setHasStudentDiscount(false);
     }
 
     if (values.installments === "One Payment") {
-      total = total - 100;
+      total = total - 200;
       setInstallmentNum(1);
     } else {
       setInstallmentNum(2);
@@ -78,33 +81,45 @@ const SubmissionZone = () => {
           <Trans id="registerForm.submit.price.label">Total:</Trans>
         </span>
         <span className={submissionStyles.price}>
-          {currency.format(totalPrice)}
+          {totalPrice > 0 ? (
+            <del className={submissionStyles.fullPrice}>
+              {currency.format(courses[course])}
+            </del>
+          ) : null}
+          <span>{currency.format(totalPrice)}</span>
         </span>
       </p>
       <ul>
         {course ? (
-          <li>{`${coursesI18n[course]} - ${currency.format(
-            courses[course]
-          )}`}</li>
+          <>
+            <li>{`${coursesI18n[course]} - ${currency.format(
+              courses[course]
+            )}`}</li>
+            <li>
+              <Trans id="registerForm.submit.earlyDiscount">
+                200TL Early Registration discount applied.
+              </Trans>
+            </li>
+          </>
         ) : null}
         {hasGroupDiscount ? (
           <li>
             <Trans id="registerForm.submit.groupDiscount">
-              10% Group discount applied.
+              100TL Group discount applied.
             </Trans>
           </li>
         ) : null}
-        {hasOtherDiscount ? (
+        {hasStudentDiscount ? (
           <li>
-            <Trans id="registerForm.submit.otherDiscount">
-              10% Other discount applied.
+            <Trans id="registerForm.submit.studentDiscount">
+              100TL Returning student discount applied.
             </Trans>
           </li>
         ) : null}
         {installmentNum === 1 ? (
           <li>
             <Trans id="registerForm.submit.oneDiscount">
-              100TL One time payment discount applied.
+              200TL One time payment discount applied.
             </Trans>
           </li>
         ) : null}

@@ -18,7 +18,12 @@
 }
 
 .price {
-  font-size: 32px;
+  font-size: 26px;
+}
+
+.full-price {
+  color: gray;
+  margin-right: 10px;
 }
 
 .summary ul {

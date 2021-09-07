@@ -32,7 +32,7 @@ const RegisterForm = () => {
         province: "",
         installments: "",
         groupDiscount: false,
-        otherDiscount: false,
+        studentDiscount: false,
         gdpr: false,
       }}
       validationSchema={localValidation}
@@ -41,7 +41,7 @@ const RegisterForm = () => {
         const url = "https://forms.erciyesenglish.workers.dev/forms/register";
         fetch(url, {
           method: "POST",
-          body: JSON.stringify(values),
+          body: JSON.stringify({ ...values, lang: locale }),
         })
           .then((response) => {
             if (response.status !== 200) {
@@ -65,7 +65,7 @@ const RegisterForm = () => {
         <div className={registerFormStyles.thankyouPage}>
           <h1>
             <FaCheckCircle />{" "}
-            <Trans id="registerForm.thankyou.headline">Sent!</Trans>!
+            <Trans id="registerForm.thankyou.headline">Sent!</Trans>
           </h1>
           <p>
             <Trans id="registerForm.thankyou.text">
@@ -118,12 +118,6 @@ const RegisterForm = () => {
                   {t({
                     id: "registerForm.course.option3",
                     message: "Phase 3 - Fall Semester",
-                  })}
-                </option>
-                <option value="Connect Program">
-                  {t({
-                    id: "registerForm.course.option4",
-                    message: "Connect Program",
                   })}
                 </option>
               </FieldWrapper>
@@ -257,10 +251,10 @@ const RegisterForm = () => {
                 type="checkbox"
               />
               <FieldWrapper
-                fieldName="otherDiscount"
+                fieldName="studentDiscount"
                 label={t({
-                  id: "registerForm.otherDiscount",
-                  message: "Are you part of something?",
+                  id: "registerForm.studentDiscount",
+                  message: "Are you a returning student?",
                 })}
                 type="checkbox"
               />
