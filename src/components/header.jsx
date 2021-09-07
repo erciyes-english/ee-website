@@ -62,7 +62,7 @@ const Header = ({ isSmall }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/register" className={headerStyles.highlighted}>
+                <Link to="/register/" className={headerStyles.highlighted}>
                   <Trans id="menu.register">Register</Trans>
                 </Link>
               </li>

@@ -59,7 +59,7 @@ const MobileNav = ({ iconColor }) => {
             </Link>
           </li>
           <li>
-            <Link to="/register">
+            <Link to="/register/">
               <Trans id="menu.register">Register</Trans>
             </Link>
           </li>
