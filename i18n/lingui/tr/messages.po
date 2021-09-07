@@ -180,7 +180,7 @@ msgstr "Açık adres, şirket adı, c/o"
 
 #: src/components/forms/register/register-form.jsx:185
 msgid "registerForm.address2.label"
-msgstr "dres satırı 2"
+msgstr "Adres satırı 2"
 
 #: src/components/forms/register/register-form.jsx:189
 msgid "registerForm.address2.placeholder"
@@ -286,11 +286,11 @@ msgstr "Kayseri"
 msgid "registerForm.studentDiscount"
 msgstr "Mevcut öğrencilerimizden biri misiniz?"
 
-#: src/components/forms/register/submission-zone.jsx:126
+#: src/components/forms/register/submission-zone.jsx:133
 msgid "registerForm.submit.button"
 msgstr "Kaydı Tamamla"
 
-#: src/components/forms/register/submission-zone.jsx:122
+#: src/components/forms/register/submission-zone.jsx:129
 msgid "registerForm.submit.buttonSending"
 msgstr "Gönderiliyor..."
 
@@ -310,23 +310,23 @@ msgstr "Aşama 3 - Sonbahar Dönemi"
 #~ msgid "registerForm.submit.course4"
 #~ msgstr "Bağlantı Programı"
 
-#: src/components/forms/register/submission-zone.jsx:92
+#: src/components/forms/register/submission-zone.jsx:99
 msgid "registerForm.submit.earlyDiscount"
 msgstr "200TL Erken Kayıt indirimi uygulandı"
 
-#: src/components/forms/register/submission-zone.jsx:100
+#: src/components/forms/register/submission-zone.jsx:107
 msgid "registerForm.submit.groupDiscount"
 msgstr "100TL Grup indirimi uygulandı"
 
-#: src/components/forms/register/submission-zone.jsx:114
+#: src/components/forms/register/submission-zone.jsx:121
 msgid "registerForm.submit.oneDiscount"
 msgstr "200TL Peşin indirimi uygulanır."
 
-#: src/components/forms/register/submission-zone.jsx:79
+#: src/components/forms/register/submission-zone.jsx:81
 msgid "registerForm.submit.price.label"
 msgstr "Toplam:"
 
-#: src/components/forms/register/submission-zone.jsx:107
+#: src/components/forms/register/submission-zone.jsx:114
 msgid "registerForm.submit.studentDiscount"
 msgstr "100TL Mevcut öğrenci indirimi uygulandı"
 
