@@ -38,7 +38,7 @@ const Hero = () => (
             <Link to="/#programs">
               <Trans id="hero.btn1">Programs</Trans>
             </Link>
-            <Link to="/register" className={heroStyles.highlighted}>
+            <Link to="/register/" className={heroStyles.highlighted}>
               <Trans id="hero.btn2">Register</Trans>
             </Link>
           </div>
