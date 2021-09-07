@@ -65,7 +65,7 @@ const RegisterForm = () => {
         <div className={registerFormStyles.thankyouPage}>
           <h1>
             <FaCheckCircle />{" "}
-            <Trans id="registerForm.thankyou.headline">Sent!</Trans>!
+            <Trans id="registerForm.thankyou.headline">Sent!</Trans>
           </h1>
           <p>
             <Trans id="registerForm.thankyou.text">
