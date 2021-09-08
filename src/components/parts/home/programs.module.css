@@ -12,7 +12,7 @@
 @media (max-width: 992px) {
   .programs-content h2 {
     text-align: center;
-    font-size: 28x;
+    font-size: 28px;
   }
   .content {
     grid-auto-rows: auto;

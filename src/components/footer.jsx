@@ -21,28 +21,34 @@ const Footer = () => (
                   Get <strong>In Touch</strong>
                 </Trans>
               </h2>
-              <a href="tel:+905424497997">
-                <span>
-                  <FaWhatsappSquare />
-                </span>{" "}
-                0 (542) 449 79 97
-              </a>
-              <a href="mailto:austin@erciyesenglish.com">
-                <span>
-                  <FaEnvelopeSquare />
-                </span>{" "}
-                austin@erciyesenglish.com
-              </a>
-              <a
-                href="http://instagram.com/erciyesenglish"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>
-                  <FaInstagramSquare />
-                </span>{" "}
-                @erciyesenglish
-              </a>
+              <div>
+                <a href="tel:+905424497997">
+                  <span>
+                    <FaWhatsappSquare />
+                  </span>{" "}
+                  0 (542) 449 79 97
+                </a>
+              </div>
+              <div>
+                <a href="mailto:austin@erciyesenglish.com">
+                  <span>
+                    <FaEnvelopeSquare />
+                  </span>{" "}
+                  austin@erciyesenglish.com
+                </a>
+              </div>
+              <div>
+                <a
+                  href="http://instagram.com/erciyesenglish"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>
+                    <FaInstagramSquare />
+                  </span>{" "}
+                  @erciyesenglish
+                </a>
+              </div>
               <div className={footerStyles.googleMap}>
                 <iframe
                   src="https://www.google.com/maps/embed/v1/place?q=Ki%C3%A7ik%C3%B6y%2C+Erciyes+English%2C+Talas%2FKayseri&amp;key=AIzaSyD09zQ9PNDNNy9TadMuzRV_UsPUoWKntt8"

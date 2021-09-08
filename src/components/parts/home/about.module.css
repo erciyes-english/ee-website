@@ -64,6 +64,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   .about-team-image {
