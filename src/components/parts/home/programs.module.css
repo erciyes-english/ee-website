@@ -10,7 +10,13 @@
   grid-auto-rows: 1fr;
 }
 @media (max-width: 992px) {
+  .programs-content h2 {
+    text-align: center;
+    font-size: 28x;
+  }
   .content {
-    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    padding: 20px;
   }
 }
