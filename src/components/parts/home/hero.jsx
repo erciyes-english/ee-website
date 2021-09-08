@@ -6,24 +6,26 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n";
 import LeadForm from "../../forms/lead/lead-form";
 
 const Hero = () => (
-  <div style={{ display: "grid" }}>
-    <StaticImage
-      className={heroStyles.heroImageWrapper}
-      layout="fullWidth"
-      aspectRatio={16 / 9}
-      alt={t({
-        id: "hero.bgimage.alt",
-        message: "Erciyes Mountain in Kayseri, Turkey",
-      })}
-      src={
-        "https://images.unsplash.com/photo-1508901614289-62077b0a954d?w=2589"
-      }
-      placeholder="blurred"
-      formats={["auto", "webp", "avif"]}
-    />
-    <div className={heroStyles.heroContentWrapper}>
-      <div className={heroStyles.heroContent}>
-        <div className={heroStyles.heroContentLeft}>
+  <div className={`row ${heroStyles.heroRow}`}>
+    <div className="row-bg-image-container">
+      <div className={`row-bg-image-overlay ${heroStyles.heroBgImage}`}></div>
+      <StaticImage
+        className="row-bg-image"
+        layout="fullWidth"
+        aspectRatio={16 / 9}
+        alt={t({
+          id: "hero.bgimage.alt",
+          message: "Erciyes Mountain in Kayseri, Turkey",
+        })}
+        quality="80"
+        src={"../../../images/erciyes-mountain.jpg"}
+        placeholder="blurred"
+        formats={["auto", "webp", "avif"]}
+      />
+    </div>
+    <div className="row-container">
+      <div className="columns sixty-forty-columns">
+        <div className={`column ${heroStyles.heroContentLeft}`}>
           <h2>
             <Trans id="hero.line1">
               sharing <strong>life.</strong>
@@ -43,7 +45,7 @@ const Hero = () => (
             </Link>
           </div>
         </div>
-        <div className={heroStyles.heroContentRight}>
+        <div className={`column ${heroStyles.heroContentRight}`}>
           <h2 className={heroStyles.formTitle}>
             <Trans id="hero.form-title">
               begin your english <strong>journey today!</strong>

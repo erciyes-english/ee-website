@@ -47,7 +47,7 @@
 }
 .main-header.small .logo-mark,
 .main-header.main-header.small .logo-type {
-  fill: #c0272d;
+  fill: var(--main-accent-color);
 }
 
 .main-header.small .logo-mark {
@@ -83,7 +83,7 @@
   color: black;
 }
 .main-header.small .highlighted {
-  background: #c0272d;
+  background: var(--main-accent-color);
   color: white;
 }
 

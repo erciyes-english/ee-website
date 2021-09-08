@@ -1,38 +1,22 @@
-.image-wrapper {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  height: 100%;
-  min-width: 100%;
-}
-
-.content-wrapper {
-  grid-area: 1/1;
-  position: relative;
-  place-items: center;
-  display: grid;
+.programs-bg-image {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  padding: 90px 0;
 }
 
-.content-wrapper h2 {
+.programs-content h2 {
   color: white;
-  font-size: 42px;
-  font-weight: 100;
-  margin-bottom: 10px;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 33.33333333% 33.33333333% 33.33333333%;
-  max-width: 1100px;
-  width: 100%;
-  margin: 0px auto;
   grid-auto-rows: 1fr;
 }
 @media (max-width: 992px) {
+  .programs-content h2 {
+    text-align: center;
+    font-size: 28px;
+  }
   .content {
-    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    padding: 20px;
   }
 }
