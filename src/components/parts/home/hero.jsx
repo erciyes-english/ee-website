@@ -6,7 +6,7 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n";
 import LeadForm from "../../forms/lead/lead-form";
 
 const Hero = () => (
-  <div className="row" style={{ minHeight: "95vh" }}>
+  <div className={`row ${heroStyles.heroRow}`}>
     <div className="row-bg-image-container">
       <div className={`row-bg-image-overlay ${heroStyles.heroBgImage}`}></div>
       <StaticImage
