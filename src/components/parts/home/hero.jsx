@@ -25,7 +25,7 @@ const Hero = () => (
     </div>
     <div className="row-container">
       <div className="columns sixty-forty-columns">
-        <div className={heroStyles.heroContentLeft}>
+        <div className={`column ${heroStyles.heroContentLeft}`}>
           <h2>
             <Trans id="hero.line1">
               sharing <strong>life.</strong>
@@ -45,7 +45,7 @@ const Hero = () => (
             </Link>
           </div>
         </div>
-        <div className={heroStyles.heroContentRight}>
+        <div className={`column ${heroStyles.heroContentRight}`}>
           <h2 className={heroStyles.formTitle}>
             <Trans id="hero.form-title">
               begin your english <strong>journey today!</strong>

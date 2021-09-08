@@ -14,7 +14,7 @@ const Footer = () => (
     <div className={`row ${footerStyles.footerContentWrapper}`}>
       <div className="row-container">
         <div className="columns sixty-forty-columns">
-          <div className={footerStyles.footerContentLeft}>
+          <div className={`column ${footerStyles.footerContentLeft}`}>
             <div className={footerStyles.footerContactInfo}>
               <h2>
                 <Trans id="footer.headline">
@@ -52,7 +52,7 @@ const Footer = () => (
               </div>
             </div>
           </div>
-          <div className={footerStyles.footerContentRight}>
+          <div className={`column ${footerStyles.footerContentRight}`}>
             <h2 className={footerStyles.formTitle}>
               <Trans id="footer.form-title">
                 More <strong>Questions?</strong>

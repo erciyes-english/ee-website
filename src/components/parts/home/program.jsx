@@ -7,7 +7,7 @@ import { LocalizedLink as Link } from "gatsby-theme-i18n";
 const Program = ({ data }) => {
   const image = getImage(data.frontmatter.remoteImageUrl[0]);
   return (
-    <div className={programStyles.program}>
+    <div className={`column ${programStyles.program}`}>
       <div className={programStyles.programContentWrapper}>
         <div className="program-image">
           <GatsbyImage image={image} alt={data.frontmatter.imageAlt} />

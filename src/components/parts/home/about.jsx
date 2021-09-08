@@ -9,7 +9,7 @@ const About = ({ data }) => {
     <div id="about" className="row" style={{ backgroundColor: "white" }}>
       <div className="row-container">
         <div className="columns forty-sixty-columns">
-          <div className={aboutStyles.imageWrapper}>
+          <div className={`column ${aboutStyles.imageWrapper}`}>
             <StaticImage
               layout="fullWidth"
               alt={t({
@@ -23,7 +23,7 @@ const About = ({ data }) => {
               formats={["auto", "webp", "avif"]}
             />
           </div>
-          <div className={aboutStyles.aboutContent}>
+          <div className={`column ${aboutStyles.aboutContent}`}>
             <MDXRenderer>{data.body}</MDXRenderer>
             <div className={aboutStyles.aboutTeam}>
               <div className={aboutStyles.aboutTeamImage}>
