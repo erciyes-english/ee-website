@@ -16,11 +16,12 @@
 }
 
 .about-team-image {
-  margin: 20px;
+  padding: 20px;
 }
 
 .about-team-image > div {
-  border-radius: 100%;
+  border-radius: 200px;
+  overflow: hidden;
 }
 
 .about-team-image > p {
@@ -35,13 +36,37 @@
   .image-wrapper {
     display: none;
   }
-  .about-content-wrapper {
-    grid-template-columns: 100%;
+  .about-content {
     text-align: center;
-    width: 95%;
   }
 
   .about-content h2 {
     font-size: 28px;
+  }
+
+  .about-team {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-team-image {
+    width: 50%;
   }
 }
