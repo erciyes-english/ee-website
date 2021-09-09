@@ -1,5 +1,4 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
 import { t, Trans } from "@lingui/macro";
 import { LocalizedLink as Link } from "gatsby-theme-i18n";
