@@ -3,10 +3,15 @@
 }
 
 html,
+select,
 input,
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 700;
 }
 a {
   text-decoration: none;
@@ -14,7 +19,7 @@ a {
 }
 h2 {
   font-size: 42px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1;
   margin-bottom: 10px;
 }

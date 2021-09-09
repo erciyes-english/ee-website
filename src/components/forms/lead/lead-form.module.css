@@ -39,12 +39,12 @@
 .thankyou-page h1 {
   font-size: 40px;
   vertical-align: middle;
-  font-weight: bold;
+  font-weight: 700;
   color: #15c515;
 }
 
 .thankyou-page p {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 20px;
   margin: 20px 0;
   color: black;

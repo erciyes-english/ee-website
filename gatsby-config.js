@@ -34,11 +34,12 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          google: [
+          google2: [
             {
-              family: "Roboto",
-              variants: ["100", "300", "400", "500", "700", "900"],
+              family: "Quicksand",
+              axes: "wght@300;500;700",
               subsets: ["latin", "latin-ext"],
+              fontDisplay: "swap",
             },
           ],
         },
@@ -74,6 +75,13 @@ module.exports = {
       options: {
         name: `parts`,
         path: `${__dirname}/src/parts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
