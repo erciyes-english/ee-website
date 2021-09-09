@@ -5,21 +5,34 @@
   margin-bottom: -5px;
 }
 
+.input-two-col > div:first-child input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.input-two-col > div:last-child input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .lead-form button {
   display: block;
   margin-top: 20px;
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   min-width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
   border-radius: 0;
   font-size: 16px;
-  padding: 6px 12px;
+  font-weight: 700;
+  padding: 12px 12px;
   line-height: 1.5;
   transition: all 0.3s;
   cursor: pointer;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
 }
 
 .lead-form button:hover {

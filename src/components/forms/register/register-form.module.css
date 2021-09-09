@@ -38,8 +38,18 @@
 
 .input-two-col {
   display: grid;
-  grid-template-columns: calc(50% - 5px) calc(50% - 5px);
-  column-gap: 10px;
+  grid-template-columns: calc(50% - 3px) calc(50% - 3px);
+  column-gap: 6px;
+}
+
+.input-two-col > div:first-child input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.input-two-col > div:last-child input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 @media (max-width: 992px) {

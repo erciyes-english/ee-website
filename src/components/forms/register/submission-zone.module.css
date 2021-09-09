@@ -2,7 +2,7 @@
   position: sticky;
   top: 160px;
   background: white;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
 }
 
@@ -12,7 +12,7 @@
 
 .price-label {
   font-weight: 700;
-  color: gray;
+  color: black;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -32,30 +32,31 @@
 }
 
 .summary ul > li {
-  color: gray;
+  color: #484848;
   font-size: 14px;
 }
 
 .summary button {
   display: block;
   margin-top: 20px;
-  background-color: white;
-  border: 2px solid black;
-  color: black;
+  background-color: var(--main-accent-color);
+  border: none;
+  color: white;
   min-width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
   border-radius: 0;
   font-size: 16px;
-  padding: 6px 12px;
+  font-weight: 700;
+  padding: 14px;
   line-height: 1.5;
   transition: all 0.3s;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .summary button:hover {
   background: black;
-  color: white;
 }
 
 .summary button:disabled {
@@ -68,6 +69,6 @@
   .summary {
     position: static;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 30px;
   }
 }

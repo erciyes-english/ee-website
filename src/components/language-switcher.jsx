@@ -1,8 +1,7 @@
 import * as React from "react";
 import { useLocalization, LocalizedLink as Link } from "gatsby-theme-i18n";
-import { Trans } from "@lingui/react";
-import { languageSwitcher } from "./language-switcher.module.css";
-
+import * as langStyle from "./language-switcher.module.css";
+import { FaGlobeEurope } from "react-icons/fa";
 const LanguageSwitcher = () => {
   const { locale } = useLocalization();
 
@@ -11,9 +10,12 @@ const LanguageSwitcher = () => {
 
   const newLocale = locale === "en" ? "tr" : "en";
   return (
-    <div className={languageSwitcher}>
-      <Link to={path} language={newLocale}>
-        <Trans id="menu.language-switcher">Change to English</Trans>
+    <div className={langStyle.languageSwitcher}>
+      <Link className={langStyle.languageLink} to={path} language={newLocale}>
+        <span className={langStyle.languageIcon}>
+          <FaGlobeEurope />
+        </span>
+        <span>{newLocale}</span>
       </Link>
     </div>
   );

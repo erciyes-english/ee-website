@@ -27,18 +27,20 @@ const FieldWrapper = ({
       {type !== "checkbox" && !hideLabel ? (
         <label htmlFor={`${fieldName}-${uniqueId}`}>{label}</label>
       ) : null}
-      <Field
-        id={`${fieldName}-${uniqueId}`}
-        as={as}
-        type={type}
-        name={fieldName}
-        placeholder={placeholder}
-        className={
-          errors[fieldName] && touched[fieldName] ? fieldStyles.error : null
-        }
-      >
-        {children}
-      </Field>
+      <div className={`${as === "select" ? "select-wrapper" : ""}`}>
+        <Field
+          id={`${fieldName}-${uniqueId}`}
+          as={as}
+          type={type}
+          name={fieldName}
+          placeholder={placeholder}
+          className={
+            errors[fieldName] && touched[fieldName] ? fieldStyles.error : null
+          }
+        >
+          {children}
+        </Field>
+      </div>
       {type === "checkbox" ? (
         <label htmlFor={`${fieldName}-${uniqueId}`}>{label}</label>
       ) : null}
