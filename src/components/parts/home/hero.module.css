@@ -7,10 +7,10 @@
 }
 
 .hero-content-right {
-  padding: 20px 40px;
+  padding: 40px;
   background-color: var(--main-accent-color);
-  box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 25%);
   color: white;
+  border-radius: 30px;
 }
 
 .hero-content-left h2 {
@@ -21,23 +21,26 @@
 .hero-buttons a {
   display: inline-block;
   border: white 2px solid;
-  padding: 12px 24px;
+  padding: 14px 24px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-top: 20px;
   color: white;
   transition: 0.3s all;
+  border-radius: 50px;
 }
 
-.highlighted {
+.hero-buttons a.highlighted {
   margin-left: 20px;
+  border: 2px solid var(--main-accent-color);
   background-color: var(--main-accent-color);
 }
 
 .hero-buttons a:hover {
   background-color: white;
+  border: white 2px solid;
   color: black;
 }
 
@@ -83,6 +86,7 @@
   }
 
   .hero-buttons a.highlighted {
+    margin: 0px auto;
     margin-top: 20px;
   }
 }
