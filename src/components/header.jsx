@@ -37,8 +37,7 @@ const Header = ({ isSmall }) => {
             </div>
           </Link>
         </div>
-        <div className="header-right">
-          <LanguageSwitcher />
+        <div className={headerStyles.headerCenter}>
           <nav className={headerStyles.mainNav}>
             <ul>
               <li>
@@ -61,13 +60,14 @@ const Header = ({ isSmall }) => {
                   <Trans id="menu.contact">Contact</Trans>
                 </Link>
               </li>
-              <li>
-                <Link to="/register/" className={headerStyles.highlighted}>
-                  <Trans id="menu.register">Register</Trans>
-                </Link>
-              </li>
             </ul>
           </nav>
+        </div>
+        <div className={headerStyles.headerRight}>
+          <Link to="/register/" className={headerStyles.highlighted}>
+            <Trans id="menu.register">Register</Trans>
+          </Link>
+          <LanguageSwitcher />
           <MobileNav iconColor={small ? "black" : "white"} />
         </div>
       </div>
