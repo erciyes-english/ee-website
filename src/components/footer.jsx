@@ -51,6 +51,7 @@ const Footer = () => (
               </div>
               <div className={footerStyles.googleMap}>
                 <iframe
+                  loading="lazy"
                   src="https://www.google.com/maps/embed/v1/place?q=Ki%C3%A7ik%C3%B6y%2C+Erciyes+English%2C+Talas%2FKayseri&amp;key=AIzaSyD09zQ9PNDNNy9TadMuzRV_UsPUoWKntt8"
                   aria-hidden="true"
                   title="Erciyes English in Kayseri, Turkey: Kiçiköy Mh, Yeşilevler 1. Sk. No:3 D: 6, 38280 Talas/Kayseri"

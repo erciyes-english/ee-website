@@ -52,7 +52,7 @@
 
 .field-error {
   margin-top: 5px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   grid-column: 1 / 3;
 }

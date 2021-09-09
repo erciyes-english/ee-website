@@ -22,7 +22,7 @@
   display: inline-block;
   color: white;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   padding: 8px 0;
   margin: 2px 0;
 }
@@ -40,14 +40,14 @@
   text-align: center;
   color: black;
   font-size: 36px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.1;
 }
 
 .form-subtitle {
   color: black;
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   padding: 10px 20px 30px;
 }
