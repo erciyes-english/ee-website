@@ -12,7 +12,8 @@ import Seo from "../components/seo";
 const IndexPage = ({ data }) => {
   const aboutData = data.about.nodes[0];
   const programData = data.program.nodes;
-  const heroImage = data.hero.edges;
+  const heroDesktop = data.heroDesktop;
+  const heroMobile = data.heroMobile;
   return (
     <main>
       <Seo
@@ -27,7 +28,7 @@ const IndexPage = ({ data }) => {
         })}
       ></Seo>
       <Header />
-      <Hero data={heroImage} />
+      <Hero heroDesktop={heroDesktop} heroMobile={heroMobile} />
       <About data={aboutData} />
       <Programs data={programData} />
       <Footer />
@@ -37,18 +38,14 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query ($locale: String!) {
-    hero: allFile(
-      filter: {
-        sourceInstanceName: { eq: "images" }
-        name: { glob: "erciyes-*" }
+    heroDesktop: file(relativePath: { eq: "erciyes-mountain.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
       }
-    ) {
-      edges {
-        node {
-          childImageSharp {
-            gatsbyImageData
-          }
-        }
+    }
+    heroMobile: file(relativePath: { eq: "erciyes-mountain-small.jpg" }) {
+      childImageSharp {
+        gatsbyImageData
       }
     }
     about: allMdx(

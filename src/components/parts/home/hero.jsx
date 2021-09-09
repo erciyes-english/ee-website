@@ -1,16 +1,13 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import * as heroStyles from "./hero.module.css";
 import { t, Trans } from "@lingui/macro";
 import { LocalizedLink as Link } from "gatsby-theme-i18n";
 import LeadForm from "../../forms/lead/lead-form";
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image";
 
-const Hero = ({ data }) => {
-  const bigImage = data[0].node;
-  const smallImage = data[1].node;
-  const desktopImage = getImage(bigImage);
-  const mobileImage = getImage(smallImage);
+const Hero = ({ heroDesktop, heroMobile }) => {
+  const desktopImage = getImage(heroDesktop);
+  const mobileImage = getImage(heroMobile);
   const images = withArtDirection(desktopImage, [
     {
       media: "(max-width: 600px)",
