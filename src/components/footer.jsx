@@ -66,19 +66,23 @@ const Footer = () => {
                       title="Erciyes English in Kayseri, Turkey: Kiçiköy Mh, Yeşilevler 1. Sk. No:3 D: 6, 38280 Talas/Kayseri"
                     ></iframe>
                   ) : (
-                    <StaticImage
+                    <div
                       onMouseEnter={handleMouseOver}
                       onClick={handleMouseOver}
-                      breakpoints={[500, 750, 1200]}
-                      layout="fullWidth"
-                      alt={t({
-                        id: "footer.map.alt",
-                        message: "Erciyes English is located in Talas, Kayseri",
-                      })}
-                      src={"../images/erciyes-english-location-map.png"}
-                      placeholder="blurred"
-                      formats={["auto", "webp", "avif"]}
-                    />
+                    >
+                      <StaticImage
+                        breakpoints={[500, 750, 1200]}
+                        layout="fullWidth"
+                        alt={t({
+                          id: "footer.map.alt",
+                          message:
+                            "Erciyes English is located in Talas, Kayseri",
+                        })}
+                        src={"../images/erciyes-english-location-map.png"}
+                        placeholder="blurred"
+                        formats={["auto", "webp", "avif"]}
+                      />
+                    </div>
                   )}
                 </div>
               </div>
