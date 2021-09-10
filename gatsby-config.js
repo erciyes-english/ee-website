@@ -74,7 +74,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-offline`,
-      options: {},
+      options: {
+        workboxConfig: {
+          globPatterns: ["*.html"],
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
