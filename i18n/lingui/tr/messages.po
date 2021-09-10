@@ -13,55 +13,59 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/parts/home/about.jsx:55
+#: src/components/parts/home/about.jsx:56
 msgid "about.harmon.alt"
 msgstr "Clay ve Charlotte Harmon - Kayseri'de İngilizce öğretmenleri"
 
-#: src/components/parts/home/about.jsx:14
+#: src/components/parts/home/about.jsx:15
 msgid "about.image.alt"
 msgstr "Kapadokya, Türkiye üzerinde uçan sıcak hava balonları"
 
-#: src/components/parts/home/about.jsx:43
+#: src/components/parts/home/about.jsx:44
 msgid "about.lizzy.alt"
 msgstr "Lizzy Vick - Kayseri'de ingilizce öğretmeni"
 
-#: src/components/parts/home/about.jsx:30
+#: src/components/parts/home/about.jsx:31
 msgid "about.schauer.alt"
 msgstr "Austin ve Heather Schauer - Kayseri'de İngilizce öğretmenleri"
 
-#: src/components/footer.jsx:61
+#: src/components/footer.jsx:93
 msgid "footer.form-desc"
 msgstr "Bu formu doldur! Ofisimizden birisi seninle iletişime geçecektir!"
 
-#: src/components/footer.jsx:56
+#: src/components/footer.jsx:88
 msgid "footer.form-title"
 msgstr "Daha Fazla <0>Soruların mı Var?</0>"
 
-#: src/components/footer.jsx:19
+#: src/components/footer.jsx:28
 msgid "footer.headline"
 msgstr "Bağlantıda <0>Ol</0>"
 
-#: src/components/parts/home/hero.jsx:14
+#: src/components/footer.jsx:74
+msgid "footer.map.alt"
+msgstr "Erciyes English, Kayseri, Talas'ta bulunuyor."
+
+#: src/components/parts/home/hero.jsx:24
 msgid "hero.bgimage.alt"
 msgstr "Erciyes Dağı Kayseri, Türkiye"
 
-#: src/components/parts/home/hero.jsx:39
+#: src/components/parts/home/hero.jsx:46
 msgid "hero.btn1"
 msgstr "Programlar"
 
-#: src/components/parts/home/hero.jsx:42
+#: src/components/parts/home/hero.jsx:49
 msgid "hero.btn2"
 msgstr "Kaydol"
 
-#: src/components/parts/home/hero.jsx:48
+#: src/components/parts/home/hero.jsx:55
 msgid "hero.form-title"
 msgstr "İngilizce Serüvenine <0>Bugün Başla!</0>"
 
-#: src/components/parts/home/hero.jsx:28
+#: src/components/parts/home/hero.jsx:35
 msgid "hero.line1"
 msgstr "Konuşmayı <0>paylaşan,</0>"
 
-#: src/components/parts/home/hero.jsx:33
+#: src/components/parts/home/hero.jsx:40
 msgid "hero.line2"
 msgstr "hayatı <0>paylaşır.</0>"
 
@@ -133,40 +137,40 @@ msgstr "Gönderildi"
 msgid "leadForm.thankyou.text"
 msgstr "Yakında cevaplayacağız!"
 
-#: src/components/header.jsx:51
+#: src/components/header.jsx:50
 #: src/components/mobile-nav.jsx:48
 msgid "menu.about"
 msgstr "Bilgi"
 
-#: src/components/header.jsx:61
+#: src/components/header.jsx:60
 #: src/components/mobile-nav.jsx:58
 msgid "menu.contact"
 msgstr "İletişim"
 
-#: src/components/header.jsx:46
+#: src/components/header.jsx:45
 #: src/components/mobile-nav.jsx:43
 msgid "menu.home"
 msgstr "Anasayfa"
 
 #: src/components/language-switcher.jsx:16
-msgid "menu.language-switcher"
-msgstr "Change to English"
+#~ msgid "menu.language-switcher"
+#~ msgstr "Change to English"
 
-#: src/components/header.jsx:56
+#: src/components/header.jsx:55
 #: src/components/mobile-nav.jsx:53
 msgid "menu.programs"
 msgstr "Programlar"
 
-#: src/components/header.jsx:66
+#: src/components/header.jsx:68
 #: src/components/mobile-nav.jsx:63
 msgid "menu.register"
 msgstr "Kaydol"
 
-#: src/components/parts/home/programs.jsx:13
+#: src/components/parts/home/programs.jsx:17
 msgid "programs.bgimage.alt"
 msgstr "Kapadokya, Türkiye'de şafakta renkli sıcak hava balonları"
 
-#: src/components/parts/home/programs.jsx:25
+#: src/components/parts/home/programs.jsx:30
 msgid "programs.headline"
 msgstr "İngilizce <0>Programlarımız</0>"
 
@@ -338,11 +342,11 @@ msgstr "Gönderildi!"
 msgid "registerForm.thankyou.text"
 msgstr "Kayıt olduğunuz için teşekkürler!"
 
-#: src/pages/index.jsx:22
+#: src/pages/index.jsx:24
 msgid "seo.home.description"
 msgstr "Erciyes English ana dili İngilizce olan bir İngilizce kursudur ve geleceğinizin kapılarını aralayacaktır. Türkiye Kayseri'deyiz."
 
-#: src/pages/index.jsx:18
+#: src/pages/index.jsx:20
 msgid "seo.home.title"
 msgstr "Kayseri'de İngilizce Kursu"
 

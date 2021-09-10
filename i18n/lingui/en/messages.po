@@ -13,55 +13,59 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/parts/home/about.jsx:55
+#: src/components/parts/home/about.jsx:56
 msgid "about.harmon.alt"
 msgstr "Clay and Charlotte Harmon - English teachers in Kayseri"
 
-#: src/components/parts/home/about.jsx:14
+#: src/components/parts/home/about.jsx:15
 msgid "about.image.alt"
 msgstr "Hot air balloons flying over Cappadocia, Turkey"
 
-#: src/components/parts/home/about.jsx:43
+#: src/components/parts/home/about.jsx:44
 msgid "about.lizzy.alt"
 msgstr "Lizzy Vick - English teacher in Kayseri"
 
-#: src/components/parts/home/about.jsx:30
+#: src/components/parts/home/about.jsx:31
 msgid "about.schauer.alt"
 msgstr "Austin and Heath Schauer - English teachers in Kayseri"
 
-#: src/components/footer.jsx:61
+#: src/components/footer.jsx:93
 msgid "footer.form-desc"
 msgstr "Fill out this form and someone from our office will contact you!"
 
-#: src/components/footer.jsx:56
+#: src/components/footer.jsx:88
 msgid "footer.form-title"
 msgstr "More <0>Questions?</0>"
 
-#: src/components/footer.jsx:19
+#: src/components/footer.jsx:28
 msgid "footer.headline"
 msgstr "Get <0>In Touch</0>"
 
-#: src/components/parts/home/hero.jsx:14
+#: src/components/footer.jsx:74
+msgid "footer.map.alt"
+msgstr "Erciyes English is located in Talas, Kayseri"
+
+#: src/components/parts/home/hero.jsx:24
 msgid "hero.bgimage.alt"
 msgstr "Erciyes Mountain in Kayseri, Turkey"
 
-#: src/components/parts/home/hero.jsx:39
+#: src/components/parts/home/hero.jsx:46
 msgid "hero.btn1"
 msgstr "Programs"
 
-#: src/components/parts/home/hero.jsx:42
+#: src/components/parts/home/hero.jsx:49
 msgid "hero.btn2"
 msgstr "Register"
 
-#: src/components/parts/home/hero.jsx:48
+#: src/components/parts/home/hero.jsx:55
 msgid "hero.form-title"
 msgstr "begin your english <0>journey today!</0>"
 
-#: src/components/parts/home/hero.jsx:28
+#: src/components/parts/home/hero.jsx:35
 msgid "hero.line1"
 msgstr "sharing <0>life.</0>"
 
-#: src/components/parts/home/hero.jsx:33
+#: src/components/parts/home/hero.jsx:40
 msgid "hero.line2"
 msgstr "sharing <0>conversation.</0>"
 
@@ -133,40 +137,40 @@ msgstr "Sent!"
 msgid "leadForm.thankyou.text"
 msgstr "We'll answer shortly!"
 
-#: src/components/header.jsx:51
+#: src/components/header.jsx:50
 #: src/components/mobile-nav.jsx:48
 msgid "menu.about"
 msgstr "About"
 
-#: src/components/header.jsx:61
+#: src/components/header.jsx:60
 #: src/components/mobile-nav.jsx:58
 msgid "menu.contact"
 msgstr "Contact"
 
-#: src/components/header.jsx:46
+#: src/components/header.jsx:45
 #: src/components/mobile-nav.jsx:43
 msgid "menu.home"
 msgstr "Home"
 
 #: src/components/language-switcher.jsx:16
-msgid "menu.language-switcher"
-msgstr "Türkçeye Geçmek"
+#~ msgid "menu.language-switcher"
+#~ msgstr "Türkçeye Geçmek"
 
-#: src/components/header.jsx:56
+#: src/components/header.jsx:55
 #: src/components/mobile-nav.jsx:53
 msgid "menu.programs"
 msgstr "Programs"
 
-#: src/components/header.jsx:66
+#: src/components/header.jsx:68
 #: src/components/mobile-nav.jsx:63
 msgid "menu.register"
 msgstr "Register"
 
-#: src/components/parts/home/programs.jsx:13
+#: src/components/parts/home/programs.jsx:17
 msgid "programs.bgimage.alt"
 msgstr "Colorful hot air balloons at dawn in Cappadocia, Turkey"
 
-#: src/components/parts/home/programs.jsx:25
+#: src/components/parts/home/programs.jsx:30
 msgid "programs.headline"
 msgstr "Our <0>English Programs</0>"
 
@@ -338,11 +342,11 @@ msgstr "Sent!"
 msgid "registerForm.thankyou.text"
 msgstr "Thank you for registering!"
 
-#: src/pages/index.jsx:22
+#: src/pages/index.jsx:24
 msgid "seo.home.description"
 msgstr "English is a language center that exists to open the doors of your future through English fluency. We're located in Kayseri, Turkey"
 
-#: src/pages/index.jsx:18
+#: src/pages/index.jsx:20
 msgid "seo.home.title"
 msgstr "English learning in Kayseri, Turkey"
 
