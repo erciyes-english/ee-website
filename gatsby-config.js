@@ -53,7 +53,10 @@ module.exports = {
       options: {
         name: `Erciyes English`,
         short_name: `Erciyes English`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/maskable-icon.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
         start_url: `/tr/`,
         lang: `tr`,
         background_color: `#c0272d`,
@@ -68,6 +71,10 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {},
     },
     {
       resolve: `gatsby-source-filesystem`,
