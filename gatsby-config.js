@@ -55,7 +55,7 @@ module.exports = {
         short_name: `Erciyes English`,
         icon: `src/images/maskable-icon.png`,
         icon_options: {
-          purpose: `maskable`,
+          purpose: `any maskable`,
         },
         start_url: `/tr/`,
         lang: `tr`,
