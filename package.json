@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "lighthouse": "lhci autorun",
     "develop": "lingui compile && gatsby develop",
     "start": "lingui compile && gatsby develop",
     "build": "lingui compile && gatsby build",
@@ -46,6 +47,7 @@
     "yup-phone-lite": "^1.1.0"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.8.1",
     "@lingui/cli": "^3.10.2",
     "@lingui/macro": "^3.10.2",
     "babel-preset-gatsby": "^1.7.0",
