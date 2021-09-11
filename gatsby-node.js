@@ -46,3 +46,16 @@ exports.onCreateNode = ({
     );
   }
 };
+
+exports.createPages = async ({ actions: { createPage } }) => {
+  createPage({
+    path: "/offline-plugin-app-shell-fallback",
+    component: require.resolve("./src/offline/index.js"),
+    context: {
+      originalPath: "/offline-plugin-app-shell-fallback",
+      locale: "tr",
+      hrefLang: "tr-TR",
+      dateFormat: "MM/DD/YYYY",
+    },
+  });
+};
