@@ -16,6 +16,11 @@
   padding: 20px;
 }
 
+.program-image img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
 .program-content-wrapper h3 {
   font-size: 18px;
   font-weight: 700;

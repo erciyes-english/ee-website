@@ -1,6 +1,7 @@
 .hero-row {
   padding-top: 80px;
   height: 90vh;
+  min-height: 800px;
 }
 .hero-bg-image {
   background-color: rgba(0, 0, 0, 0.2);
@@ -54,6 +55,7 @@
 }
 @media (max-width: 992px) {
   .hero-row {
+    min-height: 500px;
     height: 80vh;
   }
   .hero-content-left {
@@ -67,8 +69,7 @@
 
 @media (max-width: 600px) {
   .hero-row {
-    padding-top: 0;
-    padding-bottom: 70px;
+    padding-top: 40px;
   }
   .hero-content-left h2 {
     font-size: 28px;

@@ -20,8 +20,12 @@
 }
 
 .about-team-image > div {
-  border-radius: 200px;
+  border-radius: 100%;
   overflow: hidden;
+}
+
+.about-team-image img {
+  border-radius: 100%;
 }
 
 .about-team-image > p {
