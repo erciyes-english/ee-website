@@ -32,10 +32,18 @@ select {
   padding: 12px 20px;
   border-radius: 50px;
   line-height: 1;
+  appearance: none;
+}
+
+input[type="checkbox"] {
+  appearance: checkbox;
+  background: white;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 select {
-  appearance: none;
   line-height: 1.3;
 }
 
