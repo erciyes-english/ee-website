@@ -9,7 +9,7 @@ const Program = ({ data }) => {
   return (
     <div className={`column ${programStyles.program}`}>
       <div className={programStyles.programContentWrapper}>
-        <div className="program-image">
+        <div className={programStyles.programImage}>
           <GatsbyImage image={image} alt={data.frontmatter.imageAlt} />
         </div>
         <div className={programStyles.programContent}>
