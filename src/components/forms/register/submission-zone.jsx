@@ -11,6 +11,8 @@ const SubmissionZone = () => {
     "Phase 1 - Fall Semester": 3500,
     "Phase 2 - Fall Semester": 3500,
     "Phase 3 - Fall Semester": 3500,
+    "Phase 4 - Fall Semester": 3200,
+    "Children's Program": 1200,
   };
   const coursesI18n = {
     "": "",
@@ -25,6 +27,14 @@ const SubmissionZone = () => {
     "Phase 3 - Fall Semester": t({
       id: "registerForm.submit.course3",
       message: "Phase 3 - Fall Semester",
+    }),
+    "Phase 4 - Fall Semester": t({
+      id: "registerForm.submit.course4",
+      message: "Phase 4 - Fall Semester",
+    }),
+    "Children's Program": t({
+      id: "registerForm.submit.children",
+      message: "Children's Program",
     }),
   };
   const [course, setCourse] = React.useState("");
@@ -46,26 +56,29 @@ const SubmissionZone = () => {
       total = courses[values.course];
 
       // early registration discount.
-      total = total - 200;
+      if (values.course !== "Children's Program") total = total - 200;
     } else {
       setCourse("");
     }
 
-    if (values.groupDiscount) {
+    if (values.groupDiscount && values.course !== "Children's Program") {
       setHasGroupDiscount(true);
       total = total - 100;
     } else {
       setHasGroupDiscount(false);
     }
 
-    if (values.studentDiscount) {
+    if (values.studentDiscount && values.course !== "Children's Program") {
       setHasStudentDiscount(true);
       total = total - 100;
     } else {
       setHasStudentDiscount(false);
     }
 
-    if (values.installments === "One Payment") {
+    if (
+      values.installments === "One Payment" &&
+      values.course !== "Children's Program"
+    ) {
       total = total - 200;
       setInstallmentNum(1);
     } else {
@@ -81,7 +94,7 @@ const SubmissionZone = () => {
           <Trans id="registerForm.submit.price.label">Total:</Trans>
         </span>
         <span className={submissionStyles.price}>
-          {totalPrice > 0 ? (
+          {totalPrice > 0 && course !== "Children's Program" ? (
             <del className={submissionStyles.fullPrice}>
               {currency.format(courses[course])}
             </del>
@@ -95,11 +108,13 @@ const SubmissionZone = () => {
             <li>{`${coursesI18n[course]} - ${currency.format(
               courses[course]
             )}`}</li>
-            <li>
-              <Trans id="registerForm.submit.earlyDiscount">
-                200TL Early Registration discount applied.
-              </Trans>
-            </li>
+            {course !== "Children's Program" ? (
+              <li>
+                <Trans id="registerForm.submit.earlyDiscount">
+                  200TL Early Registration discount applied.
+                </Trans>
+              </li>
+            ) : null}
           </>
         ) : null}
         {hasGroupDiscount ? (
