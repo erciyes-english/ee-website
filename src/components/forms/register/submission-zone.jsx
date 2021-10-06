@@ -89,7 +89,7 @@ const SubmissionZone = () => {
   });
   return (
     <div className={submissionStyles.summary}>
-      <p>
+      <p style={{ display: "none" }}>
         <span className={submissionStyles.priceLabel}>
           <Trans id="registerForm.submit.price.label">Total:</Trans>
         </span>
@@ -102,7 +102,7 @@ const SubmissionZone = () => {
           <span>{currency.format(totalPrice)}</span>
         </span>
       </p>
-      <ul>
+      <ul style={{ display: "none" }}>
         {course ? (
           <>
             <li>{`${coursesI18n[course]} - ${currency.format(
