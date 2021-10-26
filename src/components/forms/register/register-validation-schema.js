@@ -11,6 +11,12 @@ export const RegisterValidationSchemaEn = Yup.object().shape({
     .min(2, "Names must be longer than 2 characters.")
     .max(50, "Names must be shorter than 50 characters.")
     .required("This field is required."),
+  childfname: Yup.string()
+    .min(2, "Names must be longer than 2 characters.")
+    .max(50, "Names must be shorter than 50 characters."),
+  childlname: Yup.string()
+    .min(2, "Names must be longer than 2 characters.")
+    .max(50, "Names must be shorter than 50 characters."),
   email: Yup.string()
     .email("Invalid email address.")
     .required("This field is required."),
@@ -44,6 +50,12 @@ export const RegisterValidationSchemaTr = Yup.object().shape({
     .min(2, "Ad 2 harften uzun olmalıdır.")
     .max(50, "Ad 50 harften kısa olmalıdır.")
     .required("Bu alan gereklidir."),
+  childfname: Yup.string()
+    .min(2, "Ad 2 harften uzun olmalıdır.")
+    .max(50, "Ad 50 harften kısa olmalıdır."),
+  childlname: Yup.string()
+    .min(2, "Ad 2 harften uzun olmalıdır.")
+    .max(50, "Ad 50 harften kısa olmalıdır."),
   email: Yup.string()
     .email("Geçersiz e-posta adresi.")
     .required("Bu alan gereklidir."),
