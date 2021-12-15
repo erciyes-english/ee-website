@@ -128,6 +128,12 @@ const RegisterForm = () => {
                         message: "Phase 4 - Fall Semester",
                       })}
                     </option>
+                    <option value="Private Lessons">
+                      {t({
+                        id: "registerForm.course.option.privatelessons",
+                        message: "Private Lessons",
+                      })}
+                    </option>
                     <option value="Children's Program">
                       {t({
                         id: "registerForm.course.option5",
