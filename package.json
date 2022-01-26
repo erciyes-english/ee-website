@@ -16,7 +16,7 @@
     "clean": "gatsby clean",
     "extract": "lingui extract",
     "compile": "lingui compile",
-    "deploy": "lingui compile gatsby build --prefix-paths"
+    "deploy": "lingui compile && gatsby build --prefix-paths"
   },
   "dependencies": {
     "@lingui/core": "^3.13.2",
@@ -34,7 +34,6 @@
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sharp": "^4.6.0",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-webfonts": "^2.2.1",
     "gatsby-source-filesystem": "^4.6.0",
     "gatsby-theme-i18n": "^3.0.0",
@@ -44,11 +43,11 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
-    "sharp": "^0.29.3",
     "yup": "^0.32.11",
     "yup-phone-lite": "^1.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
     "@lhci/cli": "^0.8.2",
     "@lingui/cli": "^3.13.2",
     "@lingui/macro": "^3.13.2",
