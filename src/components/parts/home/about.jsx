@@ -51,19 +51,6 @@ const About = ({ data }) => {
                 />
                 <p>Lizzy</p>
               </div>
-              <div className={aboutStyles.aboutTeamImage}>
-                <StaticImage
-                  alt={t({
-                    id: "about.harmon.alt",
-                    message:
-                      "Clay and Charlotte Harmon - English teachers in Kayseri",
-                  })}
-                  src="../../../images/square-charlotte-clay-english-teachers-kayseri.jpg"
-                  placeholder="blurred"
-                  formats={["auto", "webp", "avif"]}
-                />
-                <p>Clay &amp; Charlotte</p>
-              </div>
             </div>
           </div>
         </div>
