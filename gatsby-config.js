@@ -87,26 +87,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-multi-language-sitemap`,
-      options: {
-        output: "/",
-        query: `
-          query {
-            allSitePage {
-              nodes {
-                path
-              }
-            }
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-          }
-        `,
-        langs: ["en", "tr"],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-multi-language-sitemap`,
+    //   options: {
+    //     output: "/",
+    //     query: `
+    //       query {
+    //         allSitePage {
+    //           nodes {
+    //             path
+    //           }
+    //         }
+    //         site {
+    //           siteMetadata {
+    //             siteUrl
+    //           }
+    //         }
+    //       }
+    //     `,
+    //     langs: ["en", "tr"],
+    //   },
+    // },
   ],
 };
