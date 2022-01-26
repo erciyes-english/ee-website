@@ -10,8 +10,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.10.0
-      - name: npm install, build
-        run: npm install && npm run build
+      - name: yarn install, build
+        run: yarn install && yarn build
       - name: run Lighthouse CI
         run: npm run lighthouse
         env:
