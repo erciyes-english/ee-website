@@ -88,24 +88,48 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-multi-language-sitemap`,
+      resolve: "gatsby-plugin-sitemap",
       options: {
-        output: "/",
+        excludes: ["offline-plugin-app-shell-fallback", "404"],
         query: `
-          query {
-            allSitePage {
-              nodes {
-                path
+            {
+              site {
+                siteMetadata {
+                  siteUrl
+                }
               }
-            }
-            site {
-              siteMetadata {
-                siteUrl
+     
+              allSitePage {
+                edges {
+                  node {
+                    path
+                  }
+                }
               }
-            }
-          }
-        `,
-        langs: ["en", "tr"],
+          }`,
+        resolveSiteUrl: () => "https://www.erciyesenglish.com",
+        resolvePages: ({ site, allSitePage }) => {
+          return allSitePage.edges.map((edge) => ({
+            path: edge.node.path,
+            pathNoLang: edge.node.path.replace(/en\/|tr\//, ""),
+            siteUrl: site.siteMetadata.siteUrl,
+          }));
+        },
+        filterPages: ({ path }, excludedRoute) => {
+          return path.includes(excludedRoute);
+        },
+        serialize: ({ path, siteUrl, pathNoLang }) => ({
+          url: siteUrl + path,
+          changefreq: "weekly",
+          priority: pathNoLang === "/" ? 1 : 0.7,
+          links: [
+            { lang: "en", url: `${siteUrl}/en${pathNoLang}` },
+            {
+              lang: "tr",
+              url: `${siteUrl}/tr${pathNoLang}`,
+            },
+          ],
+        }),
       },
     },
   ],
