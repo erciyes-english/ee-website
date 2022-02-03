@@ -3,4 +3,7 @@ node_modules/
 public
 i18n/**/*.js
 .DS_Store
+.env
+keys
+albums
 .lighthouseci
