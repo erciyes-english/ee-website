@@ -104,28 +104,28 @@ const RegisterForm = () => {
                         message: "Select your course...",
                       })}
                     </option>
-                    <option value="Phase 1 - Fall Semester">
+                    <option value="Phase 1">
                       {t({
                         id: "registerForm.course.option1",
-                        message: "Phase 1 - Fall Semester",
+                        message: "Phase 1",
                       })}
                     </option>
-                    <option value="Phase 2 - Fall Semester">
+                    <option value="Phase 2">
                       {t({
                         id: "registerForm.course.option2",
-                        message: "Phase 2 - Fall Semester",
+                        message: "Phase 2",
                       })}
                     </option>
-                    <option value="Phase 3 - Fall Semester">
+                    <option value="Phase 3">
                       {t({
                         id: "registerForm.course.option3",
-                        message: "Phase 3 - Fall Semester",
+                        message: "Phase 3",
                       })}
                     </option>
-                    <option value="Phase 4 - Fall Semester">
+                    <option value="Phase 4">
                       {t({
                         id: "registerForm.course.option4",
-                        message: "Phase 4 - Fall Semester",
+                        message: "Phase 4",
                       })}
                     </option>
                     <option value="Private Lessons">

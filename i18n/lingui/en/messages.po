@@ -14,8 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/parts/home/about.jsx:56
-msgid "about.harmon.alt"
-msgstr "Clay and Charlotte Harmon - English teachers in Kayseri"
+#~ msgid "about.harmon.alt"
+#~ msgstr "Clay and Charlotte Harmon - English teachers in Kayseri"
 
 #: src/components/parts/home/about.jsx:15
 msgid "about.image.alt"
@@ -228,19 +228,19 @@ msgstr "Select your course..."
 
 #: src/components/forms/register/register-form.jsx:108
 msgid "registerForm.course.option1"
-msgstr "Phase 1 - Fall Semester"
+msgstr "Phase 1"
 
 #: src/components/forms/register/register-form.jsx:114
 msgid "registerForm.course.option2"
-msgstr "Phase 2 - Fall Semester"
+msgstr "Phase 2"
 
 #: src/components/forms/register/register-form.jsx:120
 msgid "registerForm.course.option3"
-msgstr "Phase 3 - Fall Semester"
+msgstr "Phase 3"
 
 #: src/components/forms/register/register-form.jsx:126
 msgid "registerForm.course.option4"
-msgstr "Phase 4 - Fall Semester"
+msgstr "Phase 4"
 
 #: src/components/forms/register/register-form.jsx:138
 msgid "registerForm.course.option5"
