@@ -14,8 +14,8 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/components/parts/home/about.jsx:56
-msgid "about.harmon.alt"
-msgstr "Clay ve Charlotte Harmon - Kayseri'de İngilizce öğretmenleri"
+#~ msgid "about.harmon.alt"
+#~ msgstr "Clay ve Charlotte Harmon - Kayseri'de İngilizce öğretmenleri"
 
 #: src/components/parts/home/about.jsx:15
 msgid "about.image.alt"
@@ -228,19 +228,19 @@ msgstr "Kursunuzu seçin..."
 
 #: src/components/forms/register/register-form.jsx:108
 msgid "registerForm.course.option1"
-msgstr "Aşama 1 - Sonbahar Dönemi"
+msgstr "Aşama 1"
 
 #: src/components/forms/register/register-form.jsx:114
 msgid "registerForm.course.option2"
-msgstr "Aşama 2 - Sonbahar Dönemi"
+msgstr "Aşama 2"
 
 #: src/components/forms/register/register-form.jsx:120
 msgid "registerForm.course.option3"
-msgstr "Aşama 3 - Sonbahar Dönemi"
+msgstr "Aşama 3"
 
 #: src/components/forms/register/register-form.jsx:126
 msgid "registerForm.course.option4"
-msgstr "Aşama 4 - Sonbahar Dönemi"
+msgstr "Aşama 4"
 
 #: src/components/forms/register/register-form.jsx:138
 msgid "registerForm.course.option5"
